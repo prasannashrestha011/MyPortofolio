@@ -18,6 +18,13 @@ const SkillsItems=[
             `https://raw.githubusercontent.com/prasannashrestha011/ImageRepository/main/uploads/postgresql.248x256.png`,
             `https://raw.githubusercontent.com/prasannashrestha011/ImageRepository/main/uploads/Group%20(1).png`
         ]
+    },
+    {
+        header:'Languages',
+        skills:[
+            `https://raw.githubusercontent.com/prasannashrestha011/ImageRepository/main/uploads/typescriptaasdf.png`,
+            `https://raw.githubusercontent.com/prasannashrestha011/ImageRepository/main/uploads/c-sharp-c.456x512.png`
+        ]
     }
 ]
 export {NavItems,SkillsItems}
