@@ -5,7 +5,7 @@ import SlideInMotion from '../Components/Animations/SlideInMotion'
 const MainView = () => {
   return (
     <SlideInMotion>
-      <div className=''>
+      <div className='border border-black h-screen'>
       <div className='LexendDeca 
       
       flex  justify-between  
