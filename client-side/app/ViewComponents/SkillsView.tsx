@@ -9,11 +9,11 @@ const SkillsView:React.FC = () => {
 
   return (
    
-        <div className=' w-8/12 mx-auto h-screen flex flex-col ' ref={ref}>
+        <div className=' w-full mx-auto h-screen flex flex-col ' ref={ref}>
       <h2 className='LexendDeca font-bold text-3xl text-center'>Skills</h2>
       <br/>
     
-       <main className='w-full grid grid-cols-2 gap-14  '>
+       <main className='w-full grid grid-cols-2 border border-black  '>
        {SkillsItems.map((item,idx)=>{
           if(item.header==="Frontend"){
             return(
