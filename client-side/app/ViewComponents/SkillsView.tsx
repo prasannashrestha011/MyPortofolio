@@ -13,7 +13,7 @@ const SkillsView:React.FC = () => {
       <h2 className='LexendDeca font-bold text-3xl text-center'>Skills</h2>
       <br/>
     
-       <main className='w-full grid grid-cols-2 border border-black  '>
+       <main className='w-full grid grid-cols-2   '>
        {SkillsItems.map((item,idx)=>{
           if(item.header==="Frontend"){
             return(
@@ -28,10 +28,13 @@ const SkillsView:React.FC = () => {
               <header className='LexendDeca font-semibold text-xl md:text-3xl pb-4' >{item.header}</header>
               <main className='flex gap-4 mb-2   flex-wrap'>
               {item.skills.map((skill,idx)=>(
-                  <img 
-                  draggable="false"
-                 alt="frontend"
-                  src={skill} className='w-9 md:w-14 object-contain ' key={idx}/>
+                  
+                   <img 
+                 
+                 draggable="false"
+                alt="frontend"
+                 src={skill} className='w-9 md:w-14 object-contain transition-transform duration-300 ease-in-out hover:scale-125 ' key={idx}/>
+                
               ))}
             
               </main>
@@ -52,10 +55,12 @@ const SkillsView:React.FC = () => {
               <header className='LexendDeca font-semibold text-xl md:text-3xl  ' >{item.header}</header>
               <main className=' grid grid-cols-2 gap-4    '>
               {item.skills.map((skill,idx)=>(
+               
                   <img 
                   draggable="false"
                   alt="backend"
-                  src={skill} className='w-9 md:w-14 object-contain ' key={idx}/>
+                  src={skill} className='w-9 md:w-14 object-contain transition-transform duration-300 ease-in-out hover:scale-125 ' key={idx}/>
+                 
               ))}
             
               </main>
@@ -80,7 +85,7 @@ const SkillsView:React.FC = () => {
                   <img 
                   draggable="false"
                 alt="languages"
-                  src={skill} className='w-9 md:w-14 object-contain ' key={idx}/>
+                  src={skill} className='w-9 md:w-14 object-contain transition-transform duration-300 ease-in-out hover:scale-125' key={idx}/>
               ))}
             
               </main>
