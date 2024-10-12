@@ -1,18 +1,24 @@
 'use client'
 import React, { useEffect, useState } from 'react'
+import { FaFacebook,FaGithub  } from 'react-icons/fa6'
+import { MdEmail } from 'react-icons/md'
 import { FaX,FaBars } from 'react-icons/fa6'
 import { NavItems } from '@/Ui_data/NavItems'
 import {motion} from 'framer-motion'
 const NavBarLinks=()=>{
+ 
  return(
   <>
    <ul className='flex flex-col gap-2 '>
    {NavItems.map((item,idx)=>{
     return(
      
-           <li key={idx} className=' md:w-28 w-14 md:h-14 h-12  flex justify-center items-center md:text-2xl text-xl'>
+           <motion.li 
+      
+           whileTap={{ color: "#ff0000" }}
+           key={idx} className=' md:w-28 w-14 md:h-14 h-12  flex justify-center items-center md:text-2xl text-xl'>
       <a href={item.link}>{item.name}</a>
-      </li>
+      </motion.li>
   
     )
   })}
@@ -52,9 +58,13 @@ const NavBar:React.FC = () => {
          whileInView={{y:0}}
          
          transition={{duration:'0.4'}}
-         className='md:hidden flex  justify-center items-start   flex-1 bg-red-500  '
+         className='md:hidden flex flex-col  justify-start items-center   flex-1 bg-red-500 gap-10  '
          >
-          
+            <div className='mt-4 flex justify-center item-center gap-4'>
+            <FaFacebook size={32}/>
+            <FaGithub size={32}/>
+            <MdEmail size={32}/>
+            </div>
           <NavBarLinks/>
        
          </motion.nav>
