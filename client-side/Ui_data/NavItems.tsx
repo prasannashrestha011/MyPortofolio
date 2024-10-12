@@ -27,4 +27,21 @@ const SkillsItems=[
         ]
     }
 ]
-export {NavItems,SkillsItems}
+const ProjectItems=[
+    {
+        name:"GitHub Repository Card",
+        imgSrc:"/ImageSource/gitrepocard.png",
+        language:"/icons/nextjs.png"
+    },
+    {
+        name:"Api-Testing",
+        imgSrc:"/ImageSource/api-testing.png",
+        language:"/icons/csharp.png"
+    },
+    {
+        name:'Audio player',
+        imgSrc:"/ImageSource/audioplayer.png",
+        language:"/icons/csharp.png"
+    }
+]
+export {NavItems,SkillsItems,ProjectItems}
