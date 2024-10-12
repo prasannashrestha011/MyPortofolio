@@ -31,17 +31,32 @@ const ProjectItems=[
     {
         name:"GitHub Repository Card",
         imgSrc:"/ImageSource/gitrepocard.png",
-        language:"/icons/nextjs.png"
+        language:"/icons/nextjs.png",
+        githubUrl:"https://github.com/prasannashrestha011/GitRepoInfoCard"
+    },
+    {
+        name:"Comics Web",
+        imgSrc:"/ImageSource/comicweb.png",
+        language:"/icons/nextjs.png",
+        githubUrl:"https://github.com/prasannashrestha011/Comic-web-app"
+    },
+    {
+        name:"3d game",
+        imgSrc:"/ImageSource/3dgame.png",
+        language:"/icons/csharp.png",
+        githubUrl:"https://github.com/prasannashrestha011/Ericka-Archer"
     },
     {
         name:"Api-Testing",
         imgSrc:"/ImageSource/api-testing.png",
-        language:"/icons/csharp.png"
+        language:"/icons/csharp.png",
+        githubUrl:"https://github.com/prasannashrestha011/Api-Testing-"
     },
     {
         name:'Audio player',
         imgSrc:"/ImageSource/audioplayer.png",
-        language:"/icons/csharp.png"
+        language:"/icons/csharp.png",
+        githubUrl:"https://github.com/prasannashrestha011/AudioPlayer"
     }
 ]
 export {NavItems,SkillsItems,ProjectItems}

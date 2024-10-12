@@ -9,7 +9,7 @@ const SkillsView:React.FC = () => {
  
   return (
    
-        <div className=' w-full mx-auto h-screen flex flex-col  border border-black' ref={ref}>
+        <div className=' w-full mx-auto h-screen flex flex-col  border border-black overflow-x-hidden' ref={ref} >
       <h2 className='LexendDeca font-bold text-3xl text-center'>Skills</h2>
       <br/>
     

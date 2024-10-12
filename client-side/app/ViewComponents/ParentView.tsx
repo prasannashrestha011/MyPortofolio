@@ -4,7 +4,7 @@ import FramerWrapper from '../Components/Animations/FramerMotion'
 
 const ParentView:React.FC<{children:ReactNode}> = ({children}) => {
   return (
-    <div>
+    <div className=''>
       <FramerWrapper>
         {children}
       </FramerWrapper>
