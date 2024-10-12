@@ -13,7 +13,7 @@ const SkillsView:React.FC = () => {
       <h2 className='LexendDeca font-bold text-3xl text-center'>Skills</h2>
       <br/>
     
-       <main className='w-full grid grid-cols-2  '>
+       <main className='w-full grid grid-cols-2 gap-14  '>
        {SkillsItems.map((item,idx)=>{
           if(item.header==="Frontend"){
             return(
