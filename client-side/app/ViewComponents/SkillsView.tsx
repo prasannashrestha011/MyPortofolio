@@ -9,8 +9,8 @@ const SkillsView:React.FC = () => {
  
   return (
    
-        <div className=' w-full mx-auto h-screen flex flex-col  border border-black overflow-x-hidden' ref={ref} >
-      <h2 className='LexendDeca font-bold text-3xl text-center'>Skills</h2>
+        <div className=' w-full mx-auto h-screen flex flex-col   overflow-x-hidden kadamThmor' ref={ref} >
+      <h2 className='kadamThmor  text-3xl text-center'>Skills</h2>
       <br/>
     
        <main className='w-full grid grid-cols-2    '>
@@ -25,7 +25,7 @@ const SkillsView:React.FC = () => {
               transition={{duration:0.4}} 
               >
               <div className=' flex flex-col justify-center items-center w-40 h-40  md:w-48 md:h-48 shadow-2xl  rounded-full '>
-              <header className='LexendDeca font-semibold text-xl md:text-3xl pb-4 ' >{item.header}</header>
+              <header className='kadamThmor  text-xl md:text-3xl pb-4 ' >{item.header}</header>
               <main className='flex gap-4 mb-2   flex-wrap'>
               {item.skills.map((skill,idx)=>(
                   
@@ -52,7 +52,7 @@ const SkillsView:React.FC = () => {
               transition={{duration:0.4}} 
               >
               <div className=' flex flex-col justify-center  items-center w-40 h-40   md:w-48 md:h-48  shadow-2xl  rounded-full  '>
-              <header className='LexendDeca font-semibold text-xl md:text-3xl ' >{item.header}</header>
+              <header className=' text-xl md:text-3xl ' >{item.header}</header>
               <main className=' grid grid-cols-2 gap-4    '>
               {item.skills.map((skill,idx)=>(
                
@@ -79,7 +79,7 @@ const SkillsView:React.FC = () => {
               transition={{duration:0.4}} 
               >
               <div className=' flex flex-col justify-center  items-center  w-40 h-40   md:w-48 md:h-48  shadow-2xl  rounded-full  '>
-              <header className='LexendDeca font-semibold text-xl md:text-3xl' >{item.header}</header>
+              <header className='text-xl md:text-3xl' >{item.header}</header>
               <main className=' grid grid-cols-2 gap-4    '>
               {item.skills.map((skill,idx)=>(
                   <img 

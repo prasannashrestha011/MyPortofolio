@@ -2,23 +2,27 @@
 import React from 'react'
 import SlideInMotion from '../Components/Animations/SlideInMotion'
 
+import NavBar from './NavBar'
+
 const MainView = () => {
   return (
     <SlideInMotion>
-      <div className='border border-black h-screen'>
-      <div className='LexendDeca 
       
+      <div className='kadamThmor
+      h-screen
       flex  justify-between  
-      h-96 mx-auto w-8/12 md:mt-10 lg:mt-10'
-      >
-      <span className='text-4xl  justify-start items-center   '>
-        <p className='font-semibold'>Prasanna Shrestha</p>
-        <br/>
-        <p className='text-2xl  '>fullstack developer, build Web & Desktop apps</p>
-        </span>
       
+       mx-auto md:w-10/12 md:mt-10 lg:mt-10  '
+      
+      >
+      <span className='  flex flex-col items-start  justify-between h-60 mt-10 '>
+        <p className='font-semibold md:text-4xl text-2xl '>Prasanna Shrestha</p>
+      
+        <p className='md:text-2xl text-xl '>fullstack developer, build Web & Desktop apps</p>
+        </span>
+        <NavBar/>
       </div>
-    </div>
+  
     </SlideInMotion>
   )
 }

@@ -1,5 +1,5 @@
 import MainView from "./ViewComponents/MainView";
-import NavBar from "./ViewComponents/NavBar";
+
 import ParentView from "./ViewComponents/ParentView";
 import Projects from "./ViewComponents/Projects";
 import SkillsView from "./ViewComponents/SkillsView";
@@ -12,7 +12,7 @@ export default function Home() {
     <div >
    
     <ParentView>
-    <NavBar />
+   
     <ThemeSwitchView/>
     <MainView/>
     <SkillsView/>
