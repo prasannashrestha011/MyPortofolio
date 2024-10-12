@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from 'react'
 import { FaX,FaBars } from 'react-icons/fa6'
 import { NavItems } from '@/Ui_data/NavItems'
-
+import {motion} from 'framer-motion'
 const NavBarLinks=()=>{
  return(
   <>
@@ -35,24 +35,30 @@ const NavBar:React.FC = () => {
   },[isOpen])
   return (
     <React.Fragment>
+      {/* for destkop*/}
         <nav className='    md:text-2xl md:flex hidden '>
           <NavBarLinks/>
-      </nav>
+        </nav>
+
+
       {/* for mobile devices */}
       <div className=' md:hidden w-full fixed flex flex-col  h-screen '>
 
       <div className='md:hidden flex justify-end'>   
         {isOpen? <FaX  size={24} onClick={()=>toggleNav()}/>:<FaBars size={24} onClick={()=>toggleNav()} />}</div>
-      
-      
-      {isOpen&&(
-        <nav className='md:hidden flex  justify-center items-start   flex-1 bg-red-500  '>
-        <NavBarLinks/>
-        </nav>
-        )}
-      
-
- 
+        {isOpen&&(
+         <motion.nav
+         initial={{y:-200}}
+         whileInView={{y:0}}
+         
+         transition={{duration:'0.7'}}
+         className='md:hidden flex  justify-center items-start   flex-1 bg-red-500  '
+         >
+          
+          <NavBarLinks/>
+       
+         </motion.nav>
+          )}
       </div>
     </React.Fragment>
   )
