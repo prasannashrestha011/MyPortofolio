@@ -24,7 +24,7 @@ const SkillsView:React.FC = () => {
               whileInView={{x:0,opacity:1}}
               transition={{duration:0.4}} 
               >
-              <div className=' flex flex-col justify-center items-center w-32 h-32  md:w-48 md:h-48 shadow-2xl  rounded-full '>
+              <div className=' flex flex-col justify-center items-center w-40 h-40  md:w-48 md:h-48 shadow-2xl  rounded-full '>
               <header className='LexendDeca font-semibold text-xl md:text-3xl pb-4' >{item.header}</header>
               <main className='flex gap-4 mb-2   flex-wrap'>
               {item.skills.map((skill,idx)=>(
@@ -48,7 +48,7 @@ const SkillsView:React.FC = () => {
               whileInView={{x:0,opacity:1}}
               transition={{duration:0.4}} 
               >
-              <div className=' flex flex-col justify-center  items-center  w-32 h-32  md:w-48 md:h-48  shadow-2xl  rounded-full  '>
+              <div className=' flex flex-col justify-center  items-center w-40 h-40   md:w-48 md:h-48  shadow-2xl  rounded-full  '>
               <header className='LexendDeca font-semibold text-xl md:text-3xl  ' >{item.header}</header>
               <main className=' grid grid-cols-2 gap-4    '>
               {item.skills.map((skill,idx)=>(
@@ -73,7 +73,7 @@ const SkillsView:React.FC = () => {
               whileInView={{z:0,opacity:1}}
               transition={{duration:0.4}} 
               >
-              <div className=' flex flex-col justify-center  items-center  w-32 h-32  md:w-48 md:h-48  shadow-2xl  rounded-full  '>
+              <div className=' flex flex-col justify-center  items-center  w-40 h-40   md:w-48 md:h-48  shadow-2xl  rounded-full  '>
               <header className='LexendDeca font-semibold text-xl md:text-3xl  ' >{item.header}</header>
               <main className=' grid grid-cols-2 gap-4    '>
               {item.skills.map((skill,idx)=>(
