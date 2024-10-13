@@ -6,42 +6,56 @@ import { FaX,FaBars } from 'react-icons/fa6'
 import { NavItems } from '@/Ui_data/NavItems'
 import {motion} from 'framer-motion'
 import {Link} from 'react-scroll'
-const NavBarLinks=()=>{
- 
- return(
-  <>
-   <ul className='flex flex-col gap-2 '>
-   {NavItems.map((item,idx)=>{
-    return(
-     
-      <motion.li 
-      
-           whileTap={{ color: "#ff0000" }}
-           key={idx} className=' md:w-28 w-14 md:h-14 h-12  flex justify-center items-center md:text-2xl text-xl'>
-            <Link to={item.link} smooth={true} duration={500}>
-            {item.name}
-            </Link>
-      </motion.li>
-  
-    )
-  })}
-      </ul>
-  </>
- )
-}
+
 const NavBar:React.FC = () => {
+
   const [isOpen,setIsOpen]=useState(false)
+  const [isNavigated,setIsNavigated]=useState(false)
   const toggleNav=()=>{
     setIsOpen(!isOpen)
   }
+  const toggleNavigation=()=>{
+    
+    setIsNavigated(!isNavigated);
+    setIsOpen(false)
+    console.log(isNavigated);
+  }
+  const NavBarLinks=()=>{
+  
+    return(
+     <>
+      <ul className='flex flex-col gap-2 '>
+      {NavItems.map((item,idx)=>{
+       return(
+        
+         <motion.li 
+         
+              whileTap={{ color: "#ff0000" }}
+              key={idx} className=' md:w-28 w-14 md:h-14 h-12  flex justify-center items-center md:text-2xl text-xl'>
+               <Link
+               onClick={toggleNavigation}
+               to={item.link} smooth={true} duration={500}>
+               {item.name}
+               </Link>
+         </motion.li>
+     
+       )
+     })}
+         </ul>
+     </>
+    )
+   }
   useEffect(()=>{
     if(isOpen){
       document.body.style.overflow="hidden"
     }else{
       document.body.style.overflow=""
     }
+    if(isNavigated){
+      document.body.style.overflow=""
+    }
     return(()=>{document.body.style.overflow=""})
-  },[isOpen])
+  },[isOpen,isNavigated])
   return (
     <React.Fragment>
       {/* for destkop*/}
