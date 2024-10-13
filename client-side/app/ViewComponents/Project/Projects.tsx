@@ -13,7 +13,7 @@ const Projects:React.FC = () => {
      <div 
     className='flex flex-col h-screen kadamThmor w-11/12 mx-auto ' ref={ref}>
       <header className=' font-bold text-3xl text-center '>Projects</header>
-    <main className=' md:w-11/12 mx-auto grid grid-cols-1 md:grid-cols-3 p-2 gap-2'>
+    <main className=' md:w-11/12 mx-auto grid grid-cols-1 md:grid-cols-3 p-2 md:gap-4 gap-4'>
       {ProjectItems.map((project,idx)=>(
         <RevealMotionWithoutLine key={idx}>
           <section key={idx} 
@@ -45,7 +45,7 @@ const Projects:React.FC = () => {
             <footer className='w-full md:h-auto p-2  flex flex-col justify-center items-center md:text-xl' style={{ backgroundImage: 'linear-gradient(to right, #6611C0 86%, #5F4D73 100%)' }}
             >
               <img src={project.language} className='md:w-8 w-4' alt='icon'/>
-              <span className='md:text-sm LexendDeca w-10/12 '>
+              <span className='md:text-sm LexendDeca w-10/12 text-slate-50 md:h-20'>
                 {project.des}
               </span>
             </footer>

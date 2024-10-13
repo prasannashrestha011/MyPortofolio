@@ -7,7 +7,8 @@ import { useTheme } from 'next-themes';
 import {RevealMotion} from '@/app/Components/Animations/RevealMotion';
 const Skill = () => {
     const ref=useRef(null);
-   const {resolvedTheme}=useTheme();
+   const {theme,resolvedTheme}=useTheme();
+    const isOceanTheme = theme === 'ocean' || resolvedTheme === 'ocean';
   return (
     <div>
        <Element name='skills'>
@@ -26,7 +27,7 @@ const Skill = () => {
               whileInView={{x:0,opacity:1}}
               transition={{duration:0.4}} 
               >
-              <div className={` ${resolvedTheme=="ocean"?"bg-gray-800":""} flex flex-col justify-center  items-center gap-3  w-40 h-40   md:w-52 md:h-52  shadow-2xl  rounded-full`} >
+              <div className={` ${isOceanTheme?"bg-gray-800":""} flex flex-col justify-center  items-center gap-3  w-40 h-40   md:w-52 md:h-52  shadow-2xl  rounded-full`} >
               <header className='kadamThmor  text-xl md:text-3xl pb-4 ' >{item.header}</header>
               <main className='flex gap-4 mb-2   flex-wrap'>
               {item.skills.map((skill,idx)=>(
