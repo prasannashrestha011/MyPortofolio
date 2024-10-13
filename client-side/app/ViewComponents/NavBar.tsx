@@ -13,6 +13,7 @@ const NavBar:React.FC = () => {
   const [isNavigated,setIsNavigated]=useState(false)
   const toggleNav=()=>{
     setIsOpen(!isOpen)
+    setIsNavigated(false)
   }
   const toggleNavigation=()=>{
     
