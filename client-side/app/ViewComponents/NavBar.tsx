@@ -3,9 +3,10 @@ import React, { useEffect, useState } from 'react'
 import { FaFacebook,FaGithub  } from 'react-icons/fa6'
 import { MdEmail } from 'react-icons/md'
 import { FaX,FaBars } from 'react-icons/fa6'
-import { NavItems } from '@/Ui_data/NavItems'
+import { NavItems } from '@/Ui_data/UI_Items'
 import {motion} from 'framer-motion'
 import {Link} from 'react-scroll'
+
 
 
 const NavBar:React.FC = () => {
@@ -33,12 +34,16 @@ const NavBar:React.FC = () => {
 
            <li 
               key={idx}
-              className=' md:w-28 w-14 md:h-14 h-12  flex justify-center items-center md:text-2xl text-xl'>
-              <Link
+              className=' md:w-28 w-14 md:h-14 h-12  flex justify-center items-center md:text-2xl text-xl  '>
+        
+            <Link
+              className='relative group'
               onClick={toggleNavigation}
               to={item.link} smooth={true} duration={500}>
               {item.name}
+             <span className='absolute -bottom-1 right-0 h-0.5 left-0 scale-0 group-hover:scale-100 bg-blue-600 transition-all duration-300 w-full rounded-md'></span>
               </Link>
+              
         </li>
        
      

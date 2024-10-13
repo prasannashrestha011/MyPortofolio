@@ -1,5 +1,5 @@
 "use client"
-import { SkillsItems } from '@/Ui_data/NavItems'
+import { SkillsItems } from '@/Ui_data/UI_Items'
 import { motion,} from 'framer-motion';
 import React, {   useRef } from 'react'
 import { Element } from 'react-scroll';

@@ -1,7 +1,7 @@
 "use client"
 import {RevealMotionWithoutLine} from '@/app/Components/Animations/RevealMotion'
 import {motion} from 'framer-motion'
-import { ProjectItems } from '@/Ui_data/NavItems'
+import { ProjectItems } from '@/Ui_data/UI_Items'
 import React, { useRef } from 'react'
 import { Element } from 'react-scroll'
 import { FaGithub  } from 'react-icons/fa6'
