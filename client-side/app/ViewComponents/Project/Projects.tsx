@@ -4,6 +4,7 @@ import {motion} from 'framer-motion'
 import { ProjectItems } from '@/Ui_data/NavItems'
 import React, { useRef } from 'react'
 import { Element } from 'react-scroll'
+import { FaGithub  } from 'react-icons/fa6'
 
 const Projects:React.FC = () => {
   const ref=useRef(null)
@@ -17,18 +18,16 @@ const Projects:React.FC = () => {
       {ProjectItems.map((project,idx)=>(
         <RevealMotionWithoutLine key={idx}>
           <section key={idx} 
-        className=' flex flex-col justify-between items-center  rounded-md overflow-hidden shadow-lg'>
+            className=' flex flex-col justify-between items-center  rounded-md overflow-hidden shadow-lg'>
 
             <header style={{ backgroundImage: 'linear-gradient(to right, #6611C0 86%, #5F4D73 100%)' }}
-             className='w-full flex justify-between items-center h-12 text-slate-50 text-sm md:text-xl'>
+             className='w-full flex justify-between items-center h-12  text-sm md:text-xl'>
             
-              <span className='flex-1 flex justify-center item-center ml-8'>{project.name}</span>
+              <span className='flex-1 flex justify-center item-center ml-8 text-slate-50'>{project.name}</span>
                 <a href={project.githubUrl} target='_blank' rel="noopener noreferrer">
-                  <span >
-                  <img 
-              
-              src="/icons/github_logo.png"  className='w-11 pr-2'/>
-                  </span>
+                 
+                  <FaGithub size={38} className='pr-2'/>
+                
                 </a>
               </header>
 

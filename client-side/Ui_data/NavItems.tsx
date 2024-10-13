@@ -6,6 +6,7 @@ const NavItems=[
 ]
 const SkillsItems=[
     {header:"Frontend",skills:[
+        `https://raw.githubusercontent.com/prasannashrestha011/ImageRepository/main/uploads/dotnet.png`,
         `https://raw.githubusercontent.com/prasannashrestha011/ImageRepository/main/uploads/SVGRepo_iconCarrier.png`,
         `https://raw.githubusercontent.com/prasannashrestha011/ImageRepository/main/uploads/pngwing.com.png`
     ]

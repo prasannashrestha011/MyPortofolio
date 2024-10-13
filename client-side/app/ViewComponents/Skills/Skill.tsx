@@ -3,12 +3,11 @@ import { SkillsItems } from '@/Ui_data/NavItems'
 import { motion,} from 'framer-motion';
 import React, {   useRef } from 'react'
 import { Element } from 'react-scroll';
-import { useTheme } from 'next-themes';
 import {RevealMotion} from '@/app/Components/Animations/RevealMotion';
 const Skill = () => {
     const ref=useRef(null);
-   const {theme,resolvedTheme}=useTheme();
-    const isOceanTheme = theme === 'ocean' || resolvedTheme === 'ocean';
+  
+
   return (
     <div>
        <Element name='skills'>
@@ -27,16 +26,18 @@ const Skill = () => {
               whileInView={{x:0,opacity:1}}
               transition={{duration:0.4}} 
               >
-              <div className={` ${isOceanTheme?"bg-gray-800":""} flex flex-col justify-center  items-center gap-3  w-40 h-40   md:w-52 md:h-52  shadow-2xl  rounded-full`} >
-              <header className='kadamThmor  text-xl md:text-3xl pb-4 ' >{item.header}</header>
-              <main className='flex gap-4 mb-2   flex-wrap'>
+              <div className={`  flex flex-col justify-center  items-center gap-3  w-40 h-40   md:w-52 md:h-52  shadow-2xl  rounded-full `} >
+              <header className='kadamThmor  text-xl md:text-3xl pb  ' >{item.header}</header>
+              <main className='grid grid-cols-2 gap-4   '>
               {item.skills.map((skill,idx)=>(
                   
-                   <img 
+                 <div key={idx} className={`flex w-9 md:w-14 ${idx===item.skills.length-1?' col-span-2 ml-8' :''} `}>
+                    <img 
                  
                  draggable="false"
                 alt="frontend"
-                 src={skill} className='w-9 md:w-14 object-contain transition-transform duration-300 ease-in-out hover:scale-125 ' key={idx}/>
+                 src={skill} className={`object-contain transition-transform duration-300 ease-in-out hover:scale-125  `} />
+                 </div>
                 
               ))}
             
@@ -54,8 +55,8 @@ const Skill = () => {
               whileInView={{x:0,opacity:1}}
               transition={{duration:0.4}} 
               >
-              <div className={` ${resolvedTheme=="ocean"?"bg-gray-800":""} flex flex-col justify-center  items-center gap-3  w-40 h-40   md:w-52 md:h-52  shadow-2xl  rounded-full`} >
-              <header className=' text-xl md:text-3xl ' >{item.header}</header>
+              <div className={`  flex flex-col justify-center  items-center gap-3  w-40 h-40   md:w-52 md:h-52  shadow-2xl  rounded-full`} >
+              <header className=' text-xl md:text-3xl pt-2' >{item.header}</header>
               <main className=' grid grid-cols-2 gap-4    '>
               {item.skills.map((skill,idx)=>(
                
@@ -81,7 +82,7 @@ const Skill = () => {
               whileInView={{z:0,opacity:1}}
               transition={{duration:0.4}} 
               >
-              <div className={` ${resolvedTheme=="ocean"?"bg-gray-800":""} flex flex-col justify-center  items-center gap-3  w-40 h-40   md:w-52 md:h-52  shadow-2xl  rounded-full`}  >
+              <div className={`  flex flex-col justify-center  items-center gap-3  w-40 h-40   md:w-52 md:h-52  shadow-2xl  rounded-full`}  >
               <header className='text-xl md:text-3xl' >{item.header}</header>
               <main className=' grid grid-cols-2 gap-4    '>
               {item.skills.map((skill,idx)=>(
