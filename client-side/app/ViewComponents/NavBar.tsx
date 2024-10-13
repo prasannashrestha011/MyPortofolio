@@ -5,6 +5,7 @@ import { MdEmail } from 'react-icons/md'
 import { FaX,FaBars } from 'react-icons/fa6'
 import { NavItems } from '@/Ui_data/NavItems'
 import {motion} from 'framer-motion'
+import {Link} from 'react-scroll'
 const NavBarLinks=()=>{
  
  return(
@@ -13,11 +14,13 @@ const NavBarLinks=()=>{
    {NavItems.map((item,idx)=>{
     return(
      
-           <motion.li 
+      <motion.li 
       
            whileTap={{ color: "#ff0000" }}
            key={idx} className=' md:w-28 w-14 md:h-14 h-12  flex justify-center items-center md:text-2xl text-xl'>
-      <a href={item.link}>{item.name}</a>
+            <Link to={item.link} smooth={true} duration={500}>
+            {item.name}
+            </Link>
       </motion.li>
   
     )
@@ -52,13 +55,13 @@ const NavBar:React.FC = () => {
 
       <div className='md:hidden flex justify-end'>   
         {isOpen? <FaX  size={24} onClick={()=>toggleNav()}/>:<FaBars size={24} onClick={()=>toggleNav()} />}</div>
-        {isOpen&&(
+       
          <motion.nav
-         initial={{y:200}}
-         whileInView={{y:0}}
-         
-         transition={{duration:'0.4'}}
-         className='md:hidden flex flex-col  justify-start items-center   flex-1 bg-red-500 gap-10  '
+         initial={{y:"-130%"}}
+         animate={{y:isOpen?"0%":"-130%"}}
+         transition={{ type: "spring", stiffness: 400, damping: 70 }}
+  
+         className='    md:hidden flex flex-col  justify-start items-center   flex-1 bg-red-500 gap-10  '
          >
             <div className='mt-4 flex justify-center item-center gap-4'>
             <FaFacebook size={32}/>
@@ -68,7 +71,7 @@ const NavBar:React.FC = () => {
           <NavBarLinks/>
        
          </motion.nav>
-          )}
+          
       </div>
     </React.Fragment>
   )

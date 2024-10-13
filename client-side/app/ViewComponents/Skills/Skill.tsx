@@ -2,14 +2,15 @@
 import { SkillsItems } from '@/Ui_data/NavItems'
 import { motion,} from 'framer-motion';
 import React, {   useRef } from 'react'
+import { Element } from 'react-scroll';
 
-const SkillsView:React.FC = () => {
-   const ref=useRef(null);
+const Skill = () => {
+    const ref=useRef(null);
 
- 
   return (
-   
-        <div className=' w-full mx-auto h-screen flex flex-col   overflow-x-hidden kadamThmor' ref={ref} >
+    <div>
+       <Element name='skills'>
+      <div className=' w-full mx-auto h-screen flex flex-col   overflow-x-hidden kadamThmor' ref={ref} >
       <h2 className='kadamThmor  text-3xl text-center'>Skills</h2>
       <br/>
     
@@ -96,8 +97,9 @@ const SkillsView:React.FC = () => {
         })}
       </main>
     </div>
-   
+    </Element>
+    </div>
   )
 }
 
-export default SkillsView
+export default Skill

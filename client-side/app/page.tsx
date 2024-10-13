@@ -1,8 +1,9 @@
-import MainView from "./ViewComponents/MainView";
+import MainView from "./ViewComponents/Main/MainView";
 
 import ParentView from "./ViewComponents/ParentView";
-import Projects from "./ViewComponents/Projects";
-import SkillsView from "./ViewComponents/SkillsView";
+
+import ProjectView from "./ViewComponents/Project/ProjectView";
+import SkillsView from "./ViewComponents/Skills/SkillsView";
 import ThemeSwitchView from "./ViewComponents/ThemeSwitchView";
 
 
@@ -16,7 +17,7 @@ export default function Home() {
     <ThemeSwitchView/>
     <MainView/>
     <SkillsView/>
-    <Projects/>
+    <ProjectView/>
     </ParentView>
 
     </div>

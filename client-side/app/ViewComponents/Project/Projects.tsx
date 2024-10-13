@@ -2,6 +2,7 @@
 import { ProjectItems } from '@/Ui_data/NavItems'
 import {motion,useScroll} from 'framer-motion'
 import React, { useRef } from 'react'
+import { Element } from 'react-scroll'
 
 const Projects:React.FC = () => {
   const ref=useRef(null)
@@ -10,7 +11,8 @@ const Projects:React.FC = () => {
     offset:["0 1.8","1 1.5"]
   })
   return (
-    <motion.div 
+   <Element name='projects'>
+     <motion.div 
     style={{
       scale:scrollYProgress,
       opacity:scrollYProgress
@@ -44,6 +46,7 @@ const Projects:React.FC = () => {
       ))}
     </main>
     </motion.div>
+   </Element>
   )
 }
 

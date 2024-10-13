@@ -1,8 +1,8 @@
 const NavItems=[
-    {name:"Home",link:"#/"},
-    {name:"About",link:"#about"},
-    {name:"Contact",link:"#contact"},
-    {name:"Projects",link:"#projects"}
+    {name:"Home",link:"home"},
+    {name:"About",link:"skills"},
+    {name:"Contact",link:"contact"},
+    {name:"Projects",link:"projects"}
 ]
 const SkillsItems=[
     {header:"Frontend",skills:[
