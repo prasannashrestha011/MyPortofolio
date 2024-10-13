@@ -6,6 +6,7 @@ import { FaX,FaBars } from 'react-icons/fa6'
 import { NavItems } from '@/Ui_data/NavItems'
 import {motion} from 'framer-motion'
 import {Link} from 'react-scroll'
+import RevealMotion from '../Components/Animations/RevealMotion'
 
 const NavBar:React.FC = () => {
 
@@ -29,16 +30,17 @@ const NavBar:React.FC = () => {
       {NavItems.map((item,idx)=>{
        return(
         
-         <motion.li 
-         
-              whileTap={{ color: "#ff0000" }}
-              key={idx} className=' md:w-28 w-14 md:h-14 h-12  flex justify-center items-center md:text-2xl text-xl'>
-               <Link
-               onClick={toggleNavigation}
-               to={item.link} smooth={true} duration={500}>
-               {item.name}
-               </Link>
-         </motion.li>
+        <RevealMotion key={idx}>
+           <li 
+             
+              className=' md:w-28 w-14 md:h-14 h-12  flex justify-center items-center md:text-2xl text-xl'>
+              <Link
+              onClick={toggleNavigation}
+              to={item.link} smooth={true} duration={500}>
+              {item.name}
+              </Link>
+        </li>
+        </RevealMotion>
      
        )
      })}

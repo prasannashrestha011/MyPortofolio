@@ -5,6 +5,7 @@ import SlideInMotion from '../../Components/Animations/SlideInMotion'
 import NavBar from '../NavBar'
 import { Element } from 'react-scroll'
 
+import RevealMotion from '@/app/Components/Animations/RevealMotion'
 const Index = () => {
   return (
     <SlideInMotion>
@@ -21,9 +22,13 @@ const Index = () => {
    
    >
    <span className='  flex flex-col items-start  justify-evenly h-60 mt-10 ml-4 '>
-     <p className='font-semibold md:text-4xl text-2xl '>Prasanna Shrestha</p>
+      <RevealMotion>
+      <p className='font-semibold md:text-4xl text-2xl '>Prasanna Shrestha</p>
+      </RevealMotion>
    
-     <p className='md:text-2xl text-xl w-60 md:w-auto '>fullstack developer, build Web & Desktop apps</p>
+      <RevealMotion>
+      <p className='md:text-2xl text-xl w-60 md:w-auto '>fullstack developer, build Web & Desktop apps</p>
+      </RevealMotion>
      </span>
      <NavBar/>
    </div>
