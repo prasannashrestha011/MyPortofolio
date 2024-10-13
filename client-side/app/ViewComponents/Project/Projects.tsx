@@ -32,12 +32,12 @@ const Projects:React.FC = () => {
                 </a>
               </header>
 
-            <main className='overflow-hidden border-2 border-gray-600 h-56 '>
+            <main className='overflow-hidden border-2 border-gray-600 md:h-48'>
               <motion.img 
               initial={{rotate:0}}
               whileTap={{rotate:8}}
               transition={{duration:0.2}}
-            className='w-44 md:w-auto  '
+            className='md:w-auto  '
               draggable="false"
             alt='project-img'
             src={project.imgSrc}/>
