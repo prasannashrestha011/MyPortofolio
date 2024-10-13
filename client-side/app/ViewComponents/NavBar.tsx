@@ -30,7 +30,7 @@ const NavBar:React.FC = () => {
       {NavItems.map((item,idx)=>{
        return(
         
-        <RevealMotion key={idx}>
+
            <li 
              
               className=' md:w-28 w-14 md:h-14 h-12  flex justify-center items-center md:text-2xl text-xl'>
@@ -40,7 +40,7 @@ const NavBar:React.FC = () => {
               {item.name}
               </Link>
         </li>
-        </RevealMotion>
+       
      
        )
      })}
@@ -63,7 +63,9 @@ const NavBar:React.FC = () => {
     <React.Fragment>
       {/* for destkop*/}
         <nav className='    md:text-2xl md:flex hidden '>
+          <RevealMotion>
           <NavBarLinks/>
+          </RevealMotion>
         </nav>
 
 
