@@ -1,27 +1,22 @@
 "use client"
+import {RevealMotionWithoutLine} from '@/app/Components/Animations/RevealMotion'
 import { ProjectItems } from '@/Ui_data/NavItems'
-import {motion,useScroll} from 'framer-motion'
 import React, { useRef } from 'react'
 import { Element } from 'react-scroll'
 
 const Projects:React.FC = () => {
   const ref=useRef(null)
-  const {scrollYProgress}=useScroll({
-    target:ref,
-    offset:["0 1.8","1 1.5"]
-  })
+ 
   return (
    <Element name='projects'>
-     <motion.div 
-    style={{
-      scale:scrollYProgress,
-      opacity:scrollYProgress
-    }}
+     <div 
+    
     className='flex flex-col h-screen kadamThmor ' ref={ref}>
       <header className=' font-bold text-3xl text-center '>Projects</header>
     <main className=' md:w-11/12 mx-auto grid grid-cols-2 md:grid-cols-3 p-2 gap-2'>
       {ProjectItems.map((project,idx)=>(
-        <section key={idx} 
+        <RevealMotionWithoutLine key={idx}>
+          <section key={idx} 
         className=' flex flex-col justify-between items-center  rounded-md overflow-hidden shadow-lg'>
             <header style={{ backgroundImage: 'linear-gradient(to right, #6611C0 86%, #5F4D73 100%)' }}
              className='w-full flex justify-center items-center h-12 text-slate-50 text-sm md:text-xl'>
@@ -43,9 +38,10 @@ const Projects:React.FC = () => {
               <img src={project.language} className='md:w-8 w-4' alt='icon'/>
             </footer>
         </section>
+        </RevealMotionWithoutLine>
       ))}
     </main>
-    </motion.div>
+    </div>
    </Element>
   )
 }

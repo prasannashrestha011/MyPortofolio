@@ -4,7 +4,7 @@ import { motion,} from 'framer-motion';
 import React, {   useRef } from 'react'
 import { Element } from 'react-scroll';
 import { useTheme } from 'next-themes';
-import RevealMotion from '@/app/Components/Animations/RevealMotion';
+import {RevealMotion} from '@/app/Components/Animations/RevealMotion';
 const Skill = () => {
     const ref=useRef(null);
    const {resolvedTheme}=useTheme();
@@ -12,7 +12,7 @@ const Skill = () => {
     <div>
        <Element name='skills'>
       <div className=' w-full mx-auto h-screen flex flex-col items-center  overflow-x-hidden kadamThmor' ref={ref} >
-      <RevealMotion><h2 className='kadamThmor  text-3xl text-center'>Skills</h2></RevealMotion>
+      <RevealMotion><h2 className='kadamThmor  text-3xl text-center font-bold'>Skills</h2></RevealMotion>
       <br/>
     
        <main className='w-full grid grid-cols-2    '>

@@ -5,7 +5,7 @@ import SlideInMotion from '../../Components/Animations/SlideInMotion'
 import NavBar from '../NavBar'
 import { Element } from 'react-scroll'
 
-import RevealMotion from '@/app/Components/Animations/RevealMotion'
+import {RevealMotion} from '@/app/Components/Animations/RevealMotion'
 const Index = () => {
   return (
     <SlideInMotion>

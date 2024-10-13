@@ -6,7 +6,7 @@ import { FaX,FaBars } from 'react-icons/fa6'
 import { NavItems } from '@/Ui_data/NavItems'
 import {motion} from 'framer-motion'
 import {Link} from 'react-scroll'
-import RevealMotion from '../Components/Animations/RevealMotion'
+
 
 const NavBar:React.FC = () => {
 
@@ -63,9 +63,9 @@ const NavBar:React.FC = () => {
     <React.Fragment>
       {/* for destkop*/}
         <nav className='    md:text-2xl md:flex hidden '>
-          <RevealMotion>
+        
           <NavBarLinks/>
-          </RevealMotion>
+          
         </nav>
 
 
