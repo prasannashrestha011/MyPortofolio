@@ -62,7 +62,7 @@ const ProjectItems=[
         language:"/icons/csharp.png",
         githubUrl:"https://github.com/prasannashrestha011/Api-Testing-",
         des:`
-            A desktop application made in c# that will assists users in testing their API data. It has similar functionality to Postaman.
+            A desktop application made in c# that will assists users in testing their API data. It has similar functionality to Postman.
             `
     },
     {
