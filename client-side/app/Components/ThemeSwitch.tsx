@@ -1,6 +1,6 @@
 // components/ThemeSwitcher.tsx
 import { useEffect, useState } from 'react';
-import { useTheme } from 'next-themes'; // Assuming you're using Next.js
+import { useTheme } from 'next-themes'; 
 import { FiSun, FiMoon } from 'react-icons/fi';
 
 const ThemeSwitcher = () => {
@@ -9,10 +9,10 @@ const ThemeSwitcher = () => {
   const [mounted, setMounted] = useState<boolean>(false);
 
   useEffect(() => {
-    setMounted(true); // Set mounted to true after the component mounts
+    setMounted(true); 
   }, []);
   
-  if (!mounted) return null; // Prevents hydration errors
+  if (!mounted) return null; 
 
   return (
     <div>
