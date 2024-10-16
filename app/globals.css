@@ -2,26 +2,29 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+@font-face {
+  font-family: LexendDeca;
+  src: url("./fonts/LexendDeca-Regular.ttf");
 }
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+.LexendDeca{
+  font-family: LexendDeca;;
 }
-
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+@font-face {
+  font-family: kadamThmor;
+  src: url("./fonts/KdamThmorPro-Regular.ttf");
+}
+.kadamThmor{
+ font-family: kadamThmor;
+}
+
+.ocean-body {
+
+  background-color:#082947;
+  color: #DBD3D3;
 }
