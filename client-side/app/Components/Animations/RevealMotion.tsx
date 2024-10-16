@@ -44,7 +44,7 @@ const RevealMotion = ({children,width}:Props) => {
         bottom:4,
         left:0,
         right:0,
-        background:"#00FF40",
+        background:"#082947",
         zIndex:20
        }}
       >
