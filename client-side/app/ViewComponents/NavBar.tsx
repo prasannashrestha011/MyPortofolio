@@ -34,7 +34,7 @@ const NavBar:React.FC = () => {
 
            <li 
               key={idx}
-              className=' md:w-28 w-14 md:h-14 h-12  flex justify-center items-center md:text-2xl text-xl  '>
+              className=' cursor-pointer md:w-28 w-14 md:h-14 h-12  flex justify-center items-center md:text-2xl text-xl  '>
         
             <Link
               className='relative group'
@@ -90,8 +90,9 @@ const NavBar:React.FC = () => {
          >
             <div className='mt-4 flex justify-center item-center gap-4'>
             <FaFacebook size={32}/>
-            <FaGithub size={32}/>
-            <MdEmail size={32}/>
+           <a href='https://github.com/prasannashrestha011' rel='_blank'> <FaGithub size={32} /></a>
+           <a href='https://mail.google.com/mail/u/0/#inbox' rel="_blank"> <MdEmail size={32}/></a>
+           
             </div>
           <NavBarLinks/>
        

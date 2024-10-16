@@ -1,5 +1,4 @@
 
-import { Provider } from "@/Providers";
 import "./globals.css";
 
 
@@ -14,11 +13,11 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
- 
+      className=" ocean-body"
       >
-       <Provider>
+       
        {children}
-       </Provider>
+      
       </body>
     </html>
   );

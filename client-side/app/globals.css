@@ -23,6 +23,8 @@
  font-family: kadamThmor;
 }
 
-.ocean body {
-  @apply bg-gray-900 text-white;
+.ocean-body {
+
+  background-color:#082947;
+  color: #DBD3D3;
 }

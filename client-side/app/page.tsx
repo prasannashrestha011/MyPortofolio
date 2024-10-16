@@ -1,24 +1,26 @@
-import MainView from "./ViewComponents/Main/MainView";
 
+
+import Index from "./ViewComponents/Index";
 import ParentView from "./ViewComponents/ParentView";
+import Projects from "./ViewComponents/Projects";
+import Skill from "./ViewComponents/Skill";
 
-import ProjectView from "./ViewComponents/Project/ProjectView";
-import SkillsView from "./ViewComponents/Skills/SkillsView";
-import ThemeSwitchView from "./ViewComponents/ThemeSwitchView";
+
 
 
 
 export default function Home() {
   return (
-    <div >
+    <div className="" >
    
     <ParentView>
-   
-    <ThemeSwitchView/>
-    <MainView/>
-    <SkillsView/>
-    <ProjectView/>
+ 
+      <Index className="snap-center"/>
+      <Skill className="snap-center"/>
+      <Projects className="snap-center"/>
+     
     </ParentView>
+   
 
     </div>
   );
