@@ -17,9 +17,10 @@ const Index = ({className}:Props) => {
    className={`kadamThmor
     ${className}
   h-screen min-h-screen 
-   flex  justify-between  
-  
-    mx-auto md:w-10/12 md:mt-10 lg:mt-10  `}
+   flex  md:justify-between  
+    flex-col
+    md:flex-row
+    mx-auto md:w-10/12 md:mt-10 lg:mt-10   `}
    
    >
    <span className='  flex flex-col items-start  justify-evenly h-72 mt-10 ml-4  bg-cover  bg-no-repeat p-4' 
@@ -35,6 +36,9 @@ const Index = ({className}:Props) => {
       <p className='md:text-2xl text-xl w-60 md:w-auto '>fullstack developer, build Web & Desktop apps</p>
       </RevealMotion>
      </span>
+    <span className='w-10/12'>
+      <img src='/Ui_imgs/mainimg.png'/>
+    </span>
      <NavBar/>
    </div>
       </Element>
