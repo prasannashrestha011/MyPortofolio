@@ -1,5 +1,6 @@
 
 
+import FramerWrapper from "./Components/Animations/FramerMotion";
 import Index from "./ViewComponents/Index";
 import ParentView from "./ViewComponents/ParentView";
 import Projects from "./ViewComponents/Projects";
@@ -15,7 +16,9 @@ export default function Home() {
    
     <ParentView>
  
-      <Index className="snap-center"/>
+      <FramerWrapper>
+        <Index className="snap-center"/>
+      </FramerWrapper>
       <Skill className="snap-center"/>
       <Projects className="snap-center"/>
      
