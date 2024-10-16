@@ -75,7 +75,7 @@ const NavBar:React.FC = () => {
 
 
       {/* for mobile devices */}
-      <div className=' md:hidden w-full fixed flex flex-col  h-screen '>
+      <div className=' md:hidden w-full fixed flex flex-col  h-screen z-20'>
 
         <div className='md:hidden flex justify-end mr-3 mt-2 '>   
         {isOpen? <FaX  size={24} onClick={()=>toggleNav()} />:<FaBars size={24} onClick={()=>toggleNav()} />}

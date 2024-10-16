@@ -8,7 +8,7 @@ const FramerWrapper:React.FC<{children:ReactNode}> = ({children}) => {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.5 }}
-        viewport={{once:true}}
+        viewport={{ once: true, amount: 0.5 }}
     >
       {children}
     </motion.div>

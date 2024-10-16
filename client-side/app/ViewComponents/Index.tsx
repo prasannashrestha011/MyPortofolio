@@ -7,10 +7,11 @@ import { Element } from 'react-scroll'
 
 import {RevealMotion} from '@/app/Components/Animations/RevealMotion'
 import { Props } from '@/Utils/ViewProps'
+
 const Index = ({className}:Props) => {
   return (
 
-      
+
       <Element name='home' suppressHydrationWarning>
       <div 
    
@@ -27,7 +28,7 @@ const Index = ({className}:Props) => {
     style={{backgroundImage:"url('/Ui_imgs/design.png')"}}>
  
       <RevealMotion>
-      <p className='md:text-4xl text-2xl bg-uri()  '
+      <p className='md:text-4xl text-2xl   '
      
       >Prasanna Shrestha</p>
       </RevealMotion>
