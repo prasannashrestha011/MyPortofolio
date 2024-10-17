@@ -24,7 +24,7 @@ const Index = ({className}:Props) => {
     mx-auto md:w-10/12 md:mt-10 lg:mt-10   `}
    
    >
-   <span className='  flex flex-col items-start  justify-evenly h-72 mt-10 ml-4  bg-cover  bg-no-repeat p-4' 
+   <span className='  flex flex-col items-start  justify-evenly h-72 mt-10 ml-4  bg-cover  bg-no-repeat p-4 ' 
     style={{backgroundImage:"url('/Ui_imgs/design.png')"}}>
  
       <RevealMotion>
@@ -34,11 +34,15 @@ const Index = ({className}:Props) => {
       </RevealMotion>
    
       <RevealMotion>
-      <p className='md:text-2xl text-xl w-60 md:w-auto '>fullstack developer, build Web & Desktop apps</p>
+      <p className='md:text-2xl text-xl w-60 md:w-96 '>
+      I am a full stack software developer.
+      I build things on web and desktop application.
+      
+        </p>
       </RevealMotion>
      </span>
     <span className='w-10/12'>
-      <img src='/Ui_imgs/mainimg.png' alt='main image'/>
+      <img src='/Ui_imgs/mainimg.png' alt='main image' draggable="false" onContextMenu={(e)=>e.preventDefault()}/>
     </span>
      <NavBar/>
    </div>

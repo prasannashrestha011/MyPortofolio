@@ -7,6 +7,7 @@ const NavItems=[
 const SkillsItems=[
     {header:"Frontend",skills:[
         `https://raw.githubusercontent.com/prasannashrestha011/ImageRepository/main/uploads/dotnet.png`,
+        `https://raw.githubusercontent.com/prasannashrestha011/ImageRepository/main/uploads/icons8-react-160.png`,
         `https://raw.githubusercontent.com/prasannashrestha011/ImageRepository/main/uploads/SVGRepo_iconCarrier.png`,
         `https://raw.githubusercontent.com/prasannashrestha011/ImageRepository/main/uploads/pngwing.com.png`
     ]
@@ -14,16 +15,18 @@ const SkillsItems=[
     {
         header:"Backend",
         skills:[
-            `https://raw.githubusercontent.com/prasannashrestha011/ImageRepository/main/uploads/icons8-express-js-96.png`,
-            `https://raw.githubusercontent.com/prasannashrestha011/ImageRepository/main/uploads/go-programming-language-icon.png`,
+            `https://raw.githubusercontent.com/prasannashrestha011/ImageRepository/main/uploads/icons8-express-js-160.png`,
+            `https://raw.githubusercontent.com/prasannashrestha011/ImageRepository/main/uploads/Group%2025%20(2).png`,
+
             `https://raw.githubusercontent.com/prasannashrestha011/ImageRepository/main/uploads/postgresql.248x256.png`,
-          
+            `https://raw.githubusercontent.com/prasannashrestha011/ImageRepository/main/uploads/pngwing.com%202.png`
         ]
     },
     {
         header:'Languages',
         skills:[
             `https://raw.githubusercontent.com/prasannashrestha011/ImageRepository/main/uploads/typescriptaasdf.png`,
+            `https://raw.githubusercontent.com/prasannashrestha011/ImageRepository/main/uploads/go-programming-language-icon.png`,
             `https://raw.githubusercontent.com/prasannashrestha011/ImageRepository/main/uploads/c-sharp-c.456x512.png`
         ]
     }
