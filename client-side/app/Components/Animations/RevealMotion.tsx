@@ -4,8 +4,9 @@ import {motion,useInView,useAnimation} from 'framer-motion'
 interface Props{
  children:JSX.Element
  width?:"fit-content"|"100%";
+ revealColor?:string;
 }
-const RevealMotion = ({children,width}:Props) => {
+const RevealMotion = ({children,width,revealColor="#082947"}:Props) => {
     const ref=useRef(null)
     const isInView=useInView(ref,{once:true})
     const mainControl=useAnimation()
@@ -44,7 +45,7 @@ const RevealMotion = ({children,width}:Props) => {
         bottom:4,
         left:0,
         right:0,
-        background:"#082947",
+        background:revealColor,
         zIndex:20
        }}
       >
