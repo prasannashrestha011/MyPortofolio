@@ -24,8 +24,8 @@ const Index = ({className}:Props) => {
     mx-auto md:w-10/12 md:mt-10 lg:mt-10   `}
    
    >
-   <span className='  flex flex-col items-start  justify-evenly h-72 mt-10 ml-4  bg-cover  bg-no-repeat p-4 ' 
-    style={{backgroundImage:"url('/Ui_imgs/design.png')"}}>
+   <span className='  flex flex-col items-start  justify-evenly h-72 mt-10 ml-4  bg-cover  bg-no-repeat p-4 md:w-auto w-11/12' 
+    style={{backgroundImage:"url('/Ui_imgs/design2.png')"}}>
  
       <RevealMotion>
       <p className='md:text-4xl text-2xl   '
