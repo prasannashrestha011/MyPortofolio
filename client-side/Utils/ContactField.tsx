@@ -16,11 +16,10 @@ const ContactField = () => {
       setMessage(e.target.value);
     }
   return (
-    <div className='flex flex-col  gap-4 h-auto kadamThmor text-gray-900 '>
+    <div className='flex flex-col  gap-4 h-auto kadamThmor text-gray-900 z-20'>
       <div className='flex flex-col gap-2'>
       <label htmlFor='name ' style={{color:'#DBD3D3'}}>Name</label>
       <Input name="name" value={name} onChange={handleUsername} 
-
       className='bg-white rounded p-2'
        placeholder='Username'
        />
@@ -34,12 +33,12 @@ const ContactField = () => {
       </div>
       <div className='flex flex-col  gap-2'>
       <label htmlFor='message ' style={{color:'#DBD3D3'}}>Message</label>
-      <Input name="message" value={message} onChange={handleUsername}
+      <Input name="message" value={message} onChange={handleMessage}
           className='bg-white rounded p-2'
           placeholder='Leave a message'
       />
       </div>
-      <Button className='bg-blue-500 hover:bg-blue-800 mx-auto w-64'>Submit</Button>
+      <Button className='bg-blue-500 hover:bg-blue-800 mx-auto w-64' >Submit</Button>
       
     </div>
   )

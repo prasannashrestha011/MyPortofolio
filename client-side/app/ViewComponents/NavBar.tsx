@@ -48,7 +48,7 @@ const NavBar:React.FC = () => {
        
      
        )
-     })}
+     })} 
          </ul>
      </>
     )
@@ -92,7 +92,7 @@ const NavBar:React.FC = () => {
             <FaFacebook size={32}/>
            <a href='https://github.com/prasannashrestha011' rel='_blank'> <FaGithub size={32} /></a>
            <a href='https://mail.google.com/mail/u/0/#inbox' rel="_blank"> <MdEmail size={32}/></a>
-           
+          
             </div>
           <NavBarLinks/>
        
