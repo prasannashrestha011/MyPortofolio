@@ -40,7 +40,7 @@ const ContactField = () => {
         return
       }
       try{
-        const response=await axios.post('http://localhost:3000/api/contact',{
+        const response=await axios.post('https://www.prasannashrestha61.com.np/api/contact',{
           username:name,
           email:email,
           message:message
