@@ -10,6 +10,6 @@ export async function POST(req:NextRequest){
         return NextResponse.json({message:response},{status:200})
     }catch(err){
         console.log(err)
-        return
+        return NextResponse.json(err)
     }
 }
