@@ -6,25 +6,20 @@ const ContactField = () => {
     const [name,setName]=useState<string>("");
     const [email,setEmail]=useState<string>("");
     const [message,setMessage]=useState<string>("")
-    const handleUserInfo=(e:ChangeEvent<HTMLInputElement>)=>{
-        const {name,value}=e.target
-        switch(name){
-            case 'name':
-                setName(value)
-                break;
-            case 'email':
-                setEmail(value)
-                break;
-            case 'message':
-                setMessage(value)
-                break;
-        }
+    const handleUsername=(e:ChangeEvent<HTMLInputElement>)=>{
+      setName(e.target.value);
+    }
+    const handleEmail=(e:ChangeEvent<HTMLInputElement>)=>{
+      setEmail(e.target.value);
+    }
+    const handleMessage=(e:ChangeEvent<HTMLInputElement>)=>{
+      setMessage(e.target.value);
     }
   return (
     <div className='flex flex-col  gap-4 h-auto kadamThmor text-gray-900 '>
       <div className='flex flex-col gap-2'>
       <label htmlFor='name ' style={{color:'#DBD3D3'}}>Name</label>
-      <Input name="name" value={name} onChange={handleUserInfo} 
+      <Input name="name" value={name} onChange={handleUsername} 
 
       className='bg-white rounded p-2'
        placeholder='Username'
@@ -32,14 +27,14 @@ const ContactField = () => {
       </div>
       <div className='flex flex-col  gap-2'>
           <label htmlFor='name' style={{color:'#DBD3D3'}}>Email</label>
-      <Input name="email" value={email} onChange={handleUserInfo} 
+      <Input name="email" value={email} onChange={handleEmail} 
           className='bg-white rounded p-2'
           placeholder='Email'
       />
       </div>
       <div className='flex flex-col  gap-2'>
       <label htmlFor='message ' style={{color:'#DBD3D3'}}>Message</label>
-      <Input name="message" value={message} onChange={handleUserInfo}
+      <Input name="message" value={message} onChange={handleUsername}
           className='bg-white rounded p-2'
           placeholder='Leave a message'
       />
