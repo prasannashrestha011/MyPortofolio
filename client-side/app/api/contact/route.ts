@@ -9,7 +9,14 @@ export async function POST(req:NextRequest){
         const response=await SendMessage(username,email,message);
         return NextResponse.json({message:response},{status:200})
     }catch(err){
-        console.log(err)
-        return err
+        const errorMessage = (err as Error).message || 'Unknown error';
+
+        console.error(err); // Log the full error for debugging
+
+        // Return a structured error response with detailed information
+        return NextResponse.json(
+            { error: 'Failed to send message', details: errorMessage },
+            { status: 500 }
+        );
     }
 }
