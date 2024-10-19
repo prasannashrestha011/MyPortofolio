@@ -1,6 +1,7 @@
 
 
 
+import ContactForm from "./ViewComponents/ContactForm";
 import Index from "./ViewComponents/Index";
 import ParentView from "./ViewComponents/ParentView";
 import Projects from "./ViewComponents/Projects";
@@ -20,7 +21,7 @@ export default function Home() {
     
       <Skill className="snap-center"/>
       <Projects className="snap-center"/>
-     
+      <ContactForm/>
     </ParentView>
    
 

@@ -8,6 +8,7 @@ import { Element } from 'react-scroll'
 import {RevealMotion} from '@/app/Components/Animations/RevealMotion'
 import { Props } from '@/Utils/ViewProps'
 
+
 const Index = ({className}:Props) => {
   return (
 
@@ -45,6 +46,7 @@ const Index = ({className}:Props) => {
       <img src='/Ui_imgs/mainimg.png' alt='main image' draggable="false" onContextMenu={(e)=>e.preventDefault()}/>
     </span>
      <NavBar/>
+   
    </div>
       </Element>
   

@@ -12,5 +12,17 @@ const SlideInMotion:React.FC<{children:ReactNode}> = ({children}) => {
     </motion.div>
   )
 }
+const SlideDownMotion:React.FC<{children:ReactNode}> = ({children}) => {
+  return (
+    <motion.div
+    initial={{y:-100}}
+    whileInView={{y:0}}
+   
+    transition={{ type: "spring", duration: 0.4, stiffness: 300,delay:0.2 }}
+    >
+        {children}
+    </motion.div>
+  )
+}
 
-export default SlideInMotion
+export  {SlideInMotion,SlideDownMotion}
