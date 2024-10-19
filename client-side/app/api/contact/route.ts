@@ -5,8 +5,8 @@ export async function POST(req:NextRequest){
     try{
         const {username,email,userMessage}= await req.json();
         console.log(username,email,userMessage)
-        await SendEmail(username,email,userMessage);
-        return NextResponse.json({message:"you are authenticated",email:userMessage},{status:200})
+        const response=await SendEmail(username,email,userMessage);
+        return NextResponse.json({message:response},{status:200})
     }catch(err){
         console.log(err)
         return

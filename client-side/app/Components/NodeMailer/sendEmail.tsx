@@ -20,8 +20,9 @@ export async function SendEmail(username:string,email:string,userMessage:string)
  try{
     const info= await transporter.sendMail(mailOptions)
     console.log(info.response)
+    return info.response;
  }catch(err){
     console.log(err)
-    return
+    return err
  }
 }
