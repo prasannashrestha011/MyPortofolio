@@ -1,7 +1,7 @@
 
 
 
-import ContactForm from "./ViewComponents/ContactForm";
+import ContactForm from "./ViewComponents/Contact/ContactForm";
 import Index from "./ViewComponents/Index";
 import ParentView from "./ViewComponents/ParentView";
 import Projects from "./ViewComponents/Projects";
