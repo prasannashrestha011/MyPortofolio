@@ -43,7 +43,7 @@ const Index = ({className}:Props) => {
       </RevealMotion>
      </span>
     <span className='w-10/12'>
-      <img src='/Ui_imgs/mainimg.png' alt='main image' draggable="false" onContextMenu={(e)=>e.preventDefault()}/>
+      <img src='/Ui_imgs/mainimg.png' alt='main_img' draggable="false" onContextMenu={(e)=>e.preventDefault()}/>
     </span>
      <NavBar/>
    
