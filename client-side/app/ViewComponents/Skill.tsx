@@ -22,8 +22,8 @@ const Skill = ({className}:Props) => {
             return(
         
              <RevealMotion width='100%' key={idx}>
-               <div className={` mx-auto  flex flex-col justify-center  items-start gap-3 pl-5  h-40 w-72    md:w-6/12 md:h-52    `}  >
-              <header className='text-xl md:text-3xl' >{item.header}</header>
+               <div className={`   flex flex-col justify-center  items-start gap-3 pl-5  h-40 w-72    md:w-96 md:h-52    `}  >
+              <header className='text-xl md:text-3xl ' >{item.header}</header>
               <main className='  flex gap-4   items-center justify-center  '>
               {item.skills.map((skill,idx)=>(
                   <img 
