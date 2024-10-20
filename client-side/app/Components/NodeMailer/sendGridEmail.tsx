@@ -4,7 +4,7 @@ export async function SendMessage(username:string,senderEmail:string,message:str
     const apikey=process.env.Api_Key
     const authorEmail=process.env.Email_User
     if(!apikey || !authorEmail){
-        throw new Error(`invalid api key or email apikey->${apikey} && authorEmail->${authorEmail}`)
+        throw new Error(`invalid api key or email apikey`)
         
     }
     sgMail.setApiKey(apikey as string)
