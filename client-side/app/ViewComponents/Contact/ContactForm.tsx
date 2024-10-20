@@ -18,7 +18,10 @@ const ContactForm = () => {
         <div className='flex flex-1 md:flex-none flex-col md:flex-row  md:justify-between   justify-center items-center'>
          <span className='  md:w-96 w-80'>
         <SlideDownMotion >
-        <img className='  md:flex ' src='https://raw.githubusercontent.com/prasannashrestha011/ImageRepository/main/uploads/Untitled_design__1_-removebg.png'/>
+        <img 
+        draggable='false'
+        onContextMenu={(e)=>e.preventDefault()}
+        className='  md:flex ' src='https://raw.githubusercontent.com/prasannashrestha011/ImageRepository/main/uploads/Untitled_design__1_-removebg.png'/>
         </SlideDownMotion>
          </span>
            <div className=' md:flex-1 flex justify-center items-center mt-2 w-full h-full rounded-md bg-blue-600'>
