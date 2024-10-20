@@ -75,16 +75,20 @@ const NavBar:React.FC = () => {
 
 
       {/* for mobile devices */}
-      <div className='flex flex-col h-screen'>
+      <div className='flex flex-col h-screen '>
 
-        <div className='md:hidden mr-3 mt-2 fixed z-20 top-1 right-2'>   
-        {isOpen?"":<FaBars size={24} onClick={()=>toggleNav()} />}
-        </div>
+       
+        {isOpen?"":
+         <div className='md:hidden mr-3 mt-2 fixed z-20 top-1 right-2 bg-slate-300 rounded-full p-1'>   
+        <FaBars size={24} onClick={()=>toggleNav()} className='  text-gray-800 ' />
+          </div>
+        }
+    
        
          <motion.nav
        initial={{ y: "190%" }}
        animate={{ y: isOpen ? "0%" : "190%" }}
-         transition={{ type: "spring", stiffness: 400, damping: 70 }}
+         transition={{ type: "tween", stiffness: 200, damping: 10,duration:0.5 }}
 
          className='h-screen top-0 border border-yellow-500  md:hidden w-full fixed flex flex-col justify-start items-center gap-10    bg-red-500 z-50    '
          >

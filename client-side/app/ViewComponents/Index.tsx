@@ -32,7 +32,7 @@ const Index = ({className}:Props) => {
     style={{backgroundImage:"url('/Ui_imgs/design2.png')"}}>
  
       <RevealMotion>
-      <p className='md:text-4xl text-2xl   '
+      <p className='md:text-4xl text-2xl mb-8  '
      
       >Prasanna Shrestha</p>
       </RevealMotion>
