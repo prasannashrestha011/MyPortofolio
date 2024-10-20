@@ -12,7 +12,7 @@ const Skill = ({className}:Props) => {
   return (
  
        <Element name='skills'>
-      <div className={` ${className} w-full mx-auto    min-h-screen  flex flex-col items-center  kadamThmor  `} ref={ref} >
+      <div className={` ${className} w-full mx-auto   min-h-screen  flex flex-col items-center  kadamThmor  `} ref={ref} >
       <RevealMotion><h2 className='kadamThmor  text-3xl text-center font-bold'>Skills</h2></RevealMotion>
       <br/>
     

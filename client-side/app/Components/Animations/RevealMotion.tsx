@@ -6,7 +6,7 @@ interface Props{
  width?:"fit-content"|"100%";
  revealColor?:string;
 }
-const RevealMotion = ({children,width,revealColor="#082947"}:Props) => {
+const RevealMotion = ({children,revealColor="#082947"}:Props) => {
     const ref=useRef(null)
     const isInView=useInView(ref,{once:true})
     const mainControl=useAnimation()
@@ -18,7 +18,7 @@ const RevealMotion = ({children,width,revealColor="#082947"}:Props) => {
         }
     },[isInView])
   return (
-    <div ref={ref} style={{position:"relative",width,overflow:"hidden"}}>
+    <div ref={ref} style={{position:"relative",overflow:"hidden"}}>
       <motion.div
       variants={{
         hidden:{opacity:0,y:75},
@@ -46,7 +46,7 @@ const RevealMotion = ({children,width,revealColor="#082947"}:Props) => {
         left:0,
         right:0,
         background:revealColor,
-        zIndex:20
+     
        }}
       >
 

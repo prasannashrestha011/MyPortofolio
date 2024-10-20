@@ -10,6 +10,9 @@ import { Props } from '@/Utils/ViewProps'
 
 
 const Index = ({className}:Props) => {
+
+
+  
   return (
 
 
@@ -46,7 +49,7 @@ const Index = ({className}:Props) => {
       <img src='/Ui_imgs/mainimg.png' alt='main_img' draggable="false" onContextMenu={(e)=>e.preventDefault()}/>
     </span>
      <NavBar/>
-   
+  
    </div>
       </Element>
   

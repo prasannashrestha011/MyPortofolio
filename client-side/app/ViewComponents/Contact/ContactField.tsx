@@ -86,7 +86,7 @@ const ContactField = () => {
       
       </div>):
     (    
-    <div className='flex flex-col  gap-4 h-auto kadamThmor text-gray-900  z-20'>
+    <div className='flex flex-col  gap-4 h-auto kadamThmor text-gray-900  z-10'>
       <div className='flex flex-col gap-2'>
       <label htmlFor='name ' style={{color:'#DBD3D3'}}>Name</label>
       <input name="name" value={name} onChange={handleUsername} 

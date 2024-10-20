@@ -21,7 +21,7 @@ export default function Home() {
     
       <Skill className="snap-center"/>
       <Projects className="snap-center"/>
-      <ContactForm/>
+      <ContactForm />
     </ParentView>
    
 

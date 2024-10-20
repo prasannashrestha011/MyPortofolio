@@ -75,19 +75,20 @@ const NavBar:React.FC = () => {
 
 
       {/* for mobile devices */}
-      <div className=' md:hidden w-full fixed flex flex-col  h-screen z-20'>
+      <div className='flex flex-col h-screen'>
 
-        <div className='md:hidden flex justify-end mr-3 mt-2 '>   
-        {isOpen? <FaX  size={24} onClick={()=>toggleNav()} />:<FaBars size={24} onClick={()=>toggleNav()} />}
+        <div className='md:hidden mr-3 mt-2 fixed z-20 top-1 right-2'>   
+        {isOpen?"":<FaBars size={24} onClick={()=>toggleNav()} />}
         </div>
        
          <motion.nav
-         initial={{y:"-130%"}}
-         animate={{y:isOpen?"0%":"-130%"}}
+       initial={{ y: "190%" }}
+       animate={{ y: isOpen ? "0%" : "190%" }}
          transition={{ type: "spring", stiffness: 400, damping: 70 }}
-  
-         className='    md:hidden flex flex-col  justify-start items-center   flex-1 bg-red-500 gap-10  '
+
+         className='h-screen top-0 border border-yellow-500  md:hidden w-full fixed flex flex-col justify-start items-center gap-10    bg-red-500 z-50    '
          >
+          <FaX   size={24} onClick={()=>toggleNav()} />
             <div className='mt-4 flex justify-center item-center gap-4'>
             <FaFacebook size={32}/>
            <a href='https://github.com/prasannashrestha011' rel='_blank'> <FaGithub size={32} /></a>
