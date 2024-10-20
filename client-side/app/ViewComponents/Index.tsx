@@ -30,11 +30,11 @@ const Index = ({className}:Props) => {
     mx-auto md:w-10/12 md:mt-10 lg:mt-10   `}
    
    >
-   <span className='  flex-1 flex flex-col items-start gap-24  justify-evenly h-auto mt-10 ml-4  bg-cover  bg-no-repeat p-4 md:w-auto w-11/12' 
+   <span className='  flex-1 flex flex-col items-start gap-16  justify-evenly h-auto mt-10 ml-4  bg-cover  bg-no-repeat p-4 md:w-auto w-11/12' 
     style={{backgroundImage:"url('/Ui_imgs/design2.png')"}}>
  
       <RevealMotion>
-      <p className='md:text-4xl text-2xl md:mb-8  '
+      <p className='md:text-4xl text-2xl md:mb-8 mt-8  '
      
       >Prasanna Shrestha</p>
       </RevealMotion>
