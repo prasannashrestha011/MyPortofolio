@@ -42,7 +42,7 @@ const Index = ({className}:Props) => {
       <RevealMotion>
       <p className='md:text-2xl text-xl w-60 md:w-96  '>
       I am a full stack software developer.
-      I build things on web and desktop application.
+      I build things for the web and desktop applications.
       
         </p>
       </RevealMotion>
