@@ -13,7 +13,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-      className=" ocean-body"
+      className=" custom-dark-blue"
       >
        
        {children}
