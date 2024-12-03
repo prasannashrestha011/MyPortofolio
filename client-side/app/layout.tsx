@@ -14,7 +14,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-      className=" custom-dark-blue cursor-none "
+      className=" custom-dark-blue  "
       >
           
        {children}

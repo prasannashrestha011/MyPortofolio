@@ -30,19 +30,7 @@ const ParentView:React.FC<{children:ReactNode}> = ({children}) => {
   return (
     <div className='relative'>
          <BackgroudGlow/>
-      <div className={`w-20 h-20 rounded-full fixed  flex items-center justify-center pointer-events-none `}
-      style={{
-       top:`${mousePosition.posY}px`,
-       left:`${mousePosition.posX}px`,
-       transform: 'translate(-50%, -50%)',
-       zIndex:30
-      }}>
-      <img
-      className='w-5 h-5'
-      src='/icons/custom-cursor.png'
-      />
-      </div>
-    
+      
         {children}
 
     </div>

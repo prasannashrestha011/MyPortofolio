@@ -2,7 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-
+*{
+  cursor: url('/icons/custom-cursor.png'),none;
+}
 
 @font-face {
   font-family: LexendDeca;
