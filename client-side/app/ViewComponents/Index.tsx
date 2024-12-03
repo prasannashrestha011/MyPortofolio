@@ -47,7 +47,7 @@ const Index = ({className}:Props) => {
    
       <RevealMotion>
    
-      <ul className='flex flex-col gap-1 text-xl w-60 md:w-96 ' >
+      <ul className='flex flex-col gap-1 md:text-xl  md:w-96 ' >
         <li className=''>Interested in backend development.
        </li>
        <li>
