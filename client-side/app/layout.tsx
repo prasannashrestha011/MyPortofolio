@@ -1,4 +1,5 @@
 
+import { BackgroudGlow } from "./Components/BackgroudGlow";
 import "./globals.css";
 
 
@@ -13,9 +14,9 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-      className=" custom-dark-blue"
+      className=" custom-dark-blue cursor-none "
       >
-       
+          
        {children}
       
       </body>

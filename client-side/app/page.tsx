@@ -1,6 +1,7 @@
 
 
 
+import { BackgroudGlow } from "./Components/BackgroudGlow";
 import ContactForm from "./ViewComponents/Contact/ContactForm";
 import Index from "./ViewComponents/Index";
 import ParentView from "./ViewComponents/ParentView";
@@ -14,9 +15,9 @@ import Skill from "./ViewComponents/Skill";
 export default function Home() {
   return (
     <div className="" >
-   
+
     <ParentView>
- 
+    
         <Index className="snap-center"/>
     
       <Skill className="snap-center"/>
