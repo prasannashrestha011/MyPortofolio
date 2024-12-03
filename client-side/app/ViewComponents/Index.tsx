@@ -7,6 +7,7 @@ import { Element } from 'react-scroll'
 
 import {RevealMotion} from '@/app/Components/Animations/RevealMotion'
 import { Props } from '@/Utils/ViewProps'
+import { FaGithub, FaLinkedin } from 'react-icons/fa6'
 
 
 const Index = ({className}:Props) => {
@@ -34,15 +35,27 @@ const Index = ({className}:Props) => {
     style={{backgroundImage:"url('/Ui_imgs/design2.png')"}}>
  
       <RevealMotion>
-      <p className='md:text-4xl text-2xl md:mb-8 mt-8  '>Prasanna Shrestha</p>
+      <>
+      <p className='md:text-4xl text-2xl md:mb-2 mb-1 mt-8  '>Prasanna Shrestha</p>
+      <div className='flex gap-2'>
+        <a target="_blank" rel="noopener noreferrer" href='https://github.com/prasannashrestha011/' ><FaGithub size={25}/></a>
+        <a target='blank' rel='noopener noreferrer' href='https://www.linkedin.com/in/prasanna-s-10a5062a4/'><FaLinkedin size={25}/></a>
+      </div>
+     
+      </>
       </RevealMotion>
    
       <RevealMotion>
-      <p className='md:text-2xl text-xl w-60 md:w-96  '>
-      I am a full stack software developer.
-      I build things for the web and desktop applications.
+   
+      <ul className='flex flex-col gap-1 text-xl w-60 md:w-96 ' >
+        <li className=''>Interested in backend development.
+       </li>
+       <li>
+       I build things for the web  applications.
+       </li>
+      </ul>
       
-        </p>
+       
       </RevealMotion>
      </span>
     <span className='w-11/12 '>
