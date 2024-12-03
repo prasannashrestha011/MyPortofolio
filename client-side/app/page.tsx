@@ -1,7 +1,5 @@
 
 
-
-import { BackgroudGlow } from "./Components/BackgroudGlow";
 import ContactForm from "./ViewComponents/Contact/ContactForm";
 import Index from "./ViewComponents/Index";
 import ParentView from "./ViewComponents/ParentView";

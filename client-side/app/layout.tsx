@@ -1,5 +1,5 @@
 
-import { BackgroudGlow } from "./Components/BackgroudGlow";
+
 import "./globals.css";
 
 

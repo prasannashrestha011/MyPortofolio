@@ -13,12 +13,12 @@ const ParentView:React.FC<{children:ReactNode}> = ({children}) => {
     posY:0
   })
   const onMouseMove=(e:MouseEvent)=>{
-    window.addEventListener('mousemove',(e)=>{
+   
       setMousePosition({
         posX:e.clientX,
         posY:e.clientY
       })
-    })
+    
   }
   useEffect(()=>{
    window.addEventListener('mousemove',onMouseMove)

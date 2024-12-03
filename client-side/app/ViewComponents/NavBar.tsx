@@ -23,18 +23,18 @@ const NavBar:React.FC = () => {
     setIsOpen(false)
     console.log(isNavigated);
   }
-  const NavBarLinks=()=>{
+  const   NavBarLinks=()=>{
   
     return(
      <>
-      <ul className='flex flex-col gap-2 '>
+      <ul className='flex flex-col gap-2  '>
       {NavItems.map((item,idx)=>{
        return(
         
 
            <li 
               key={idx}
-              className=' cursor-pointer md:w-28 w-14 md:h-14 h-12  flex justify-center items-center md:text-2xl text-xl  '>
+              className=' cursor-none md:w-28 w-14 md:h-14 h-12  flex justify-center items-center md:text-2xl text-xl  '>
         
             <Link
               className='relative group'
@@ -67,8 +67,8 @@ const NavBar:React.FC = () => {
   return (
     <React.Fragment>
       {/* for destkop*/}
-        <nav className='    md:text-2xl md:flex hidden '>
-        
+        <nav className='    md:text-2xl md:flex hidden    '>
+     
           <NavBarLinks/>
           
         </nav>

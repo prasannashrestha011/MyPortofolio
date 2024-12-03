@@ -48,7 +48,9 @@ const Index = ({className}:Props) => {
     <span className='w-11/12 '>
       <img  src='/Ui_imgs/mainimg.png' alt='main_img' draggable="false" onContextMenu={(e)=>e.preventDefault()}/>
     </span>
-     <NavBar/>
+
+   <NavBar/>
+   
   
    </div>
       </Element>
