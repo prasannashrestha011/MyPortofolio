@@ -4,6 +4,10 @@ const NavItems=[
     {name:"Contact",link:"contact"},
     {name:"Projects",link:"projects"}
 ]
+const IntroDescs=[
+    "Interested in backend development.",
+    "I build things for the web  applications."
+]
 const SkillsItems=[
     {header:"Frontend",skills:[
         '/icons/svgs/nextjs.svg',
@@ -73,4 +77,4 @@ const ProjectItems=[
             `
     }
 ]
-export {NavItems,SkillsItems,ProjectItems}
+export {NavItems,IntroDescs,SkillsItems,ProjectItems}

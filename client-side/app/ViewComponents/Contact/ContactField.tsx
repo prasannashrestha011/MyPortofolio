@@ -4,6 +4,7 @@ import React, { ChangeEvent, useEffect, useState } from 'react'
 import axios from 'axios'
 import toast from 'react-hot-toast'
 import { Button } from '@/components/ui/button'
+import BorderAnimation from '@/app/Components/Animations/BorderAnimation'
 
 const ContactField = () => {
     const [name,setName]=useState<string>("");
@@ -111,9 +112,11 @@ const ContactField = () => {
       />
       {messageError&&<span className="text-red-500 text-sm">{messageError}</span>}
       </div>
-      <Button  onClick={()=>sendMessage()}>
-  Submit
-</Button>
+      <BorderAnimation>
+      <Button className='w-full rounded-full' onClick={()=>sendMessage()}>
+       Submit
+    </Button>
+      </BorderAnimation>
     
 
     </div>
