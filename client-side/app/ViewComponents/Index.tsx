@@ -32,7 +32,7 @@ const Index = ({className}:Props) => {
     items-start
     flex-col
     md:flex-row
-    mx-auto md:w-10/12 md:mt-10 lg:mt-10   `}
+    mx-auto md:w-10/12   `}
    
    >
    <span className='flex-1 flex flex-col items-center gap-16  justify-evenly h-auto mt-10   bg-cover  bg-no-repeat p-4 md:w-auto w-11/12' 

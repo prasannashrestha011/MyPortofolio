@@ -67,7 +67,7 @@ const NavBar:React.FC = () => {
   return (
     <React.Fragment>
       {/* for destkop*/}
-        <nav className='    md:text-2xl md:flex hidden    '>
+        <nav className='    md:text-2xl md:flex hidden absolute right-4 top-14    '>
      
           <NavBarLinks/>
           
