@@ -1,6 +1,6 @@
 "use client"
 import {RevealMotion, RevealMotionWithoutLine} from '@/app/Components/Animations/RevealMotion'
-import {motion} from 'framer-motion'
+
 import { ProjectItems } from '@/Ui_data/UI_Items'
 import React, { useRef } from 'react'
 import { Element } from 'react-scroll'
@@ -23,9 +23,9 @@ const Projects = ({className}:Props) => {
       {ProjectItems.map((project,idx)=>(
         <RevealMotionWithoutLine key={idx}>
           <section key={idx} 
-            className=' flex flex-col justify-between items-center  rounded-md overflow-hidden shadow-lg'>
+            className=' bg-[#0A192F] flex flex-col justify-between items-center  rounded-md overflow-hidden shadow-lg'>
 
-            <header style={{ backgroundImage: 'linear-gradient(to right, #6611C0 86%, #5F4D73 100%)' }}
+            <header style={{ }}
              className='w-full flex justify-between items-center h-12  text-sm md:text-xl'>
             
               <span className='flex-1 flex justify-center item-center ml-8 text-slate-50'>{project.name}</span>
@@ -37,16 +37,13 @@ const Projects = ({className}:Props) => {
               </header>
 
             <main className='overflow-hidden border-2 border-gray-600 md:h-48'>
-              <motion.img 
-              initial={{rotate:0}}
-              whileTap={{rotate:8}}
-              transition={{duration:0.2}}
+              <img   
             className='md:w-auto  '
               draggable="false"
             alt='project-img'
             src={project.imgSrc}/>
             </main>
-            <footer className='w-full md:h-auto p-2  flex flex-col justify-center items-center md:text-xl' style={{ backgroundImage: 'linear-gradient(to right, #6611C0 86%, #5F4D73 100%)' }}
+            <footer className='w-full md:h-auto p-2  flex flex-col justify-center items-center md:text-xl' 
             >
               <img src={project.language} className='md:w-8 w-4' alt='icon'/>
               <span className='md:text-sm LexendDeca w-10/12 text-slate-50 md:h-20'>

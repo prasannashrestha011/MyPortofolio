@@ -92,7 +92,7 @@ const ContactField = () => {
       <label htmlFor='name ' style={{color:'#DBD3D3'}}>Name</label>
       <input name="name" value={name} onChange={handleUsername} 
       className='bg-white rounded p-2'
-       placeholder='Username'
+       placeholder='Name'
        />
        {namingError&&<span className='text-red-500 text-sm'>{namingError}</span>}
       </div>
