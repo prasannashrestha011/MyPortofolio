@@ -7,10 +7,11 @@ import { Element } from 'react-scroll'
 
 import {RevealMotion} from '@/app/Components/Animations/RevealMotion'
 import { Props } from '@/Utils/ViewProps'
-import { FaGithub, FaLinkedin } from 'react-icons/fa6'
+import { FaGithub, FaLinkedin, FaPhone } from 'react-icons/fa6'
 import BorderAnimation from '../Components/Animations/BorderAnimation'
-import { MdKeyboardArrowRight } from 'react-icons/md'
+import { MdKeyboardArrowRight, MdMail } from 'react-icons/md'
 import { IntroDescs } from '@/Ui_data/UI_Items'
+
 
 
 const Index = ({className}:Props) => {
@@ -32,10 +33,10 @@ const Index = ({className}:Props) => {
     items-start
     flex-col
     md:flex-row
-    mx-auto md:w-10/12   `}
+    mx-auto md:w-10/12  relative `}
    
    >
-   <span className='flex-1 flex flex-col items-center gap-16  justify-evenly h-auto mt-10   bg-cover  bg-no-repeat p-4 md:w-auto w-11/12' 
+   <span className=' flex-1 flex flex-col items-center gap-16  justify-evenly h-auto mt-10   bg-cover  bg-no-repeat p-4 md:w-auto w-11/12' 
     >
  
       <RevealMotion>
@@ -52,7 +53,7 @@ const Index = ({className}:Props) => {
      
       </div>
       </RevealMotion>
-   
+
       <RevealMotion>
    
       <ul className='flex flex-col gap-1 md:text-xl  md:w-96  md:mr-4' >
@@ -66,12 +67,26 @@ const Index = ({className}:Props) => {
       
        
       </RevealMotion>
+     
+  
+     
+     
      </span>
    
-
+     <div className='absolute flex flex-col bottom-20 left-3 text-slate-400'>
+          <div>Contact me:</div>
+          <div className='flex gap-2 items-center justify-center'>
+           <MdMail/>
+            shresthaprashanna27@gmail.com
+          </div>
+          <div className='flex gap-2 items-center justify-start'>
+            <FaPhone/>
+            9765546542
+          </div>
+        </div>
    <NavBar/>
    
-  
+        
    </div>
       </Element>
   

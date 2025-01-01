@@ -1,13 +1,16 @@
 const NavItems=[
     {name:"Home",link:"home"},
     {name:"About",link:"skills"},
-    {name:"Contact",link:"contact"},
+
     {name:"Projects",link:"projects"}
 ]
-const IntroDescs=[
+const IntroDescs = [
     "Interested in backend development.",
-    "I build things for the web  applications."
-]
+    "I build things for web applications.",
+   
+    "Aspiring to solve real-world problems"
+];
+
 const SkillsItems=[
     {header:"Frontend",skills:[
         '/icons/svgs/nextjs.svg',
