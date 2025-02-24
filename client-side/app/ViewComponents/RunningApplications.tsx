@@ -8,7 +8,7 @@ const RunningApplications = () => {
     brave: "/icons/brave.png",
   };
   const fetchData = async () => {
-    const response = await axios.get(`https://my-portofolio-navy-one.vercel.app/api/pinger`);
+    const response = await axios.get(`https://www.prasannashrestha.tech/api/pinger`);
     console.log("Received data ", response.data);
     setProcesses(response.data.processes);
   };
