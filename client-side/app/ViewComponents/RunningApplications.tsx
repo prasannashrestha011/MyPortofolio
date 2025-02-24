@@ -1,22 +1,25 @@
+"use client"
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 
 const RunningApplications = () => {
   const [processes, setProcesses] = useState<string[]>([]);
+  const [referrer,setReferrer]=useState<string>("")
   const processIcons: Record<string, string> = {
     code: "/icons/vs.png",
     brave: "/icons/brave.png",
   };
   const fetchData = async () => {
     if (typeof window !== "undefined" && document?.referrer) {
-      const url = document.referrer;
-      const response = await axios.get(`${url}/api/pinger`);
+    
+      const response = await axios.get(`${referrer}/api/pinger`);
       console.log("Received data ", response.data);
       setProcesses(response.data.processes);
     }
   };
   useEffect(() => {
     fetchData();
+    setReferrer(document.referrer)
     const interval = setInterval(fetchData, 2000);
     return () => clearInterval(interval);
   }, []);
