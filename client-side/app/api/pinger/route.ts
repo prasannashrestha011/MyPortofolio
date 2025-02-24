@@ -14,7 +14,7 @@ export async function OPTIONS() {
 }
 
 export async function POST(req: NextRequest) {
-  const token = process.env.Token;
+
   const processList= OpenProcessesDataManagerSingleton.getInstance()
   const { processes, access_token } = await req.json();
   console.log(access_token);
