@@ -1,10 +1,4 @@
-
-
 import "./globals.css";
-
-
-
-
 
 export default function RootLayout({
   children,
@@ -13,13 +7,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body
-      className=" custom-dark-blue  "
-      >
-          
-       {children}
-      
-      </body>
+      <head>
+        <title>Prasanna shrestha</title>
+        <link rel="icon" href="/icons/p.ico" />
+      </head>
+      <body className=" custom-dark-blue  ">{children}</body>
     </html>
   );
 }

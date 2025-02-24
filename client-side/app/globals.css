@@ -2,16 +2,34 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
-  cursor: url('/icons/custom-cursor.png'),none;
+* {
+  cursor: url("/icons/custom-cursor.png"), none;
 }
 
+@keyframes custom-ping {
+  0% {
+    transform: scale(1.5);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.8);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
+
+.custom-ping {
+  animation: custom-ping 1.5s infinite;
+}
 @font-face {
   font-family: LexendDeca;
   src: url("./fonts/LexendDeca-Regular.ttf");
 }
-.LexendDeca{
-  font-family: LexendDeca;;
+.LexendDeca {
+  font-family: LexendDeca;
 }
 @layer utilities {
   .text-balance {
@@ -22,18 +40,17 @@
   font-family: kadamThmor;
   src: url("./fonts/KdamThmorPro-Regular.ttf");
 }
-.kadamThmor{
- font-family: kadamThmor;
+.kadamThmor {
+  font-family: kadamThmor;
 }
 
 .ocean-body {
-
-  background-color:#082947;
-  color: #DBD3D3;
+  background-color: #082947;
+  color: #dbd3d3;
 }
-.custom-dark-blue{
-  color: #DBD3D3;
- 
+.custom-dark-blue {
+  color: #dbd3d3;
+
   background-color: #020f1b;
 }
 img {
