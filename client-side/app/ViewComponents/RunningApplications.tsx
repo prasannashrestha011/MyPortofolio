@@ -10,12 +10,12 @@ const RunningApplications = () => {
     brave: "/icons/brave.png",
   };
   const fetchData = async () => {
-    if (typeof window !== "undefined" && document?.referrer) {
+
     
       const response = await axios.get(`${referrer}/api/pinger`);
       console.log("Received data ", response.data);
       setProcesses(response.data.processes);
-    }
+    
   };
   useEffect(() => {
     fetchData();
