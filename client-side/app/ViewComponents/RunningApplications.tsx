@@ -8,6 +8,8 @@ const RunningApplications = () => {
   const processIcons: Record<string, string> = {
     code: "/icons/vs.png",
     brave: "/icons/brave.png",
+    postman:"/icons/postman.png",
+    neovim:"/icons/svgs/neovim.svg"
   };
   const fetchData = async () => {
 
@@ -22,7 +24,7 @@ const RunningApplications = () => {
     setReferrer(document.referrer)
     const interval = setInterval(fetchData, 2000);
     return () => clearInterval(interval);
-  }, []);
+  }, [referrer]);
   return (
     <div className="  flex flex-col items-center justify-center">
       <div className="flex gap-2 items-center">
