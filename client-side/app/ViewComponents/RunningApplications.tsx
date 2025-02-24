@@ -8,9 +8,12 @@ const RunningApplications = () => {
     brave: "/icons/brave.png",
   };
   const fetchData = async () => {
-    const response = await axios.get(`https://www.prasannashrestha.tech/api/pinger`);
-    console.log("Received data ", response.data);
-    setProcesses(response.data.processes);
+    if (typeof window !== "undefined" && document?.referrer) {
+      const url = document.referrer;
+      const response = await axios.get(`${url}/api/pinger`);
+      console.log("Received data ", response.data);
+      setProcesses(response.data.processes);
+    }
   };
   useEffect(() => {
     fetchData();
