@@ -42,7 +42,19 @@ const SkillsItems=[
     }
 ]
 const ProjectItems=[
-  
+    {
+        name:"Sql Schema visualizer",
+        imgSrc:"https://raw.githubusercontent.com/prasannashrestha011/ImageRepository/main/uploads/1734437971138.jpeg",
+        language:"/icons/svgs/nextjs.svg",
+        githubUrl:"https://github.com/prasannashrestha011/Sql-visualizer",
+        des:`Sql visualizer that can help user visualize the tables schema along with its relations.  `
+    },
+    {        
+        name:"Logic Gate simulator",
+        language:"https://skillicons.dev/icons?i=js",
+        imgSrc:"/ImageSource/logic-gate.jpeg",
+        des:`Online simulator that can help user design their basic logic circuit.`
+    },
     {
         name:"Comics Web",
         imgSrc:"/ImageSource/comicweb.png",
