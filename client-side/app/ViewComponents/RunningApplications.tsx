@@ -26,16 +26,18 @@ const RunningApplications = () => {
     return () => clearInterval(interval);
   }, [referrer]);
   return (
-    <div className="  flex flex-col items-center justify-center">
+    <div className="  flex flex-col items-start justify-center  md:w-96 w-80 mx-auto pl-3 py-2 shadow-md border border-gray-900 rounded-md">
       <div className="flex gap-2 items-center">
-        <span
-          className={`w-2 h-2 rounded-md ${processes.length > 0 ? "bg-green-700  " : "bg-red-800"} custom-ping`}
-        ></span>
+        
 
+  
+        <span className="text-sm">Currently running applications</span>
         {processes.length == 0 && (
           <span className="opacity-50 text-xs">afk</span>
         )}
-        <span className="text-sm">Currently running applications</span>
+        <span
+          className={`w-2 h-2 rounded-md ${processes.length > 0 ? "bg-green-700  " : "bg-red-800"} custom-ping`}
+        ></span>
       </div>
       <div className="flex gap-2">
         {Object.keys(processIcons).map((process) => (
