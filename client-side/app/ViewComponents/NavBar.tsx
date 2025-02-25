@@ -27,7 +27,7 @@ const NavBar:React.FC = () => {
   
     return(
      <>
-      <ul className='flex flex-col gap-2 border border-white  '>
+      <ul className='flex flex-col gap-2    '>
       {NavItems.map((item,idx)=>{
        return(
         
