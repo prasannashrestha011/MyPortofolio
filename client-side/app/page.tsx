@@ -15,7 +15,7 @@ export default function Home() {
     <div className="" >
 
     <ParentView>
-    
+
         <Index className="snap-center"/>
     
       <Skill className="snap-center"/>

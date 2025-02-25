@@ -11,6 +11,7 @@ import BorderAnimation from "../Components/Animations/BorderAnimation";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import { IntroDescs } from "@/Ui_data/UI_Items";
 import RunningApplications from "./RunningApplications";
+import TsParticles from "../Components/Animations/TsParticles";
 
 const Index = ({ className }: Props) => {
   return (
@@ -26,6 +27,7 @@ const Index = ({ className }: Props) => {
    
     mx-auto md:w-10/12  relative `}
       >
+           <TsParticles/>
         <span className=" flex-1 flex flex-col items-center gap-16  justify-evenly h-auto mt-10   bg-cover  bg-no-repeat p-4 md:w-auto w-11/12">
           <RevealMotion>
             <div className=" md:w-96 flex flex-col items-center justify-center">
