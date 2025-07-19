@@ -24,35 +24,14 @@
 .custom-ping {
   animation: custom-ping 1.5s infinite;
 }
-@font-face {
-  font-family: LexendDeca;
-  src: url("./fonts/LexendDeca-Regular.ttf");
-}
-.LexendDeca {
-  font-family: LexendDeca;
-}
-@layer utilities {
+
+layer utilities {
   .text-balance {
     text-wrap: balance;
   }
 }
-@font-face {
-  font-family: kadamThmor;
-  src: url("./fonts/KdamThmorPro-Regular.ttf");
-}
-.kadamThmor {
-  font-family: kadamThmor;
-}
 
-.ocean-body {
-  background-color: #082947;
-  color: #dbd3d3;
-}
-.custom-dark-blue {
-  color: #dbd3d3;
 
-  background-color: #020f1b;
-}
 img {
   display: block;
 }

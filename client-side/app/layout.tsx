@@ -1,4 +1,8 @@
 import "./globals.css";
+import { JetBrains_Mono } from "next/font/google";
+const custom_font = JetBrains_Mono({
+  subsets: ["latin"],
+});
 
 export default function RootLayout({
   children,
@@ -11,7 +15,7 @@ export default function RootLayout({
         <title>Prasanna shrestha</title>
         <link rel="icon" href="/icons/p.ico" />
       </head>
-      <body className=" custom-dark-blue  ">{children}</body>
+      <body className={`${custom_font.className}`}>{children}</body>
     </html>
   );
 }
