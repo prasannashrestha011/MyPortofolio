@@ -29,7 +29,7 @@ const Bio: React.FC<prop> = ({ itemVariants }) => {
       >
         you can find me on{" "}
         <motion.a
-          href="https://www.linkedin.com/in/adarsh-pandey-2017/"
+          href="https://www.linkedin.com/in/prasanna-s-10a5062a4/"
           target="_blank"
           rel="noopener noreferrer"
           className="text-white hover:text-gray-300 transition-colors inline-flex items-center gap-1"
