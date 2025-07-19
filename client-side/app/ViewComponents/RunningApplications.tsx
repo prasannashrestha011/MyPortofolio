@@ -9,7 +9,7 @@ const RunningApplications = () => {
     code: "/icons/vs.png",
     brave: "/icons/brave.png",
     postman: "/icons/postman.png",
-    neovim: "/icons/svgs/neovim.svg",
+    "gnome-terminal": "/icons/svgs/neovim.svg",
   };
   const fetchData = async () => {
     const response = await axios.get(`${referrer}/api/pinger`);
@@ -19,7 +19,7 @@ const RunningApplications = () => {
   useEffect(() => {
     fetchData();
     setReferrer(document.referrer);
-    const interval = setInterval(fetchData, 2000);
+    const interval = setInterval(fetchData, 20 * 60 * 1000);
     return () => clearInterval(interval);
   }, [referrer]);
   return (
