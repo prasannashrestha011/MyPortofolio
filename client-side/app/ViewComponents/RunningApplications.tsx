@@ -4,7 +4,9 @@ import React, { useEffect, useState } from "react";
 
 const RunningApplications = () => {
   const [processes, setProcesses] = useState<string[]>([]);
-  const [referrer, setReferrer] = useState<string>(document.referrer || "");
+  const initialReferrer =
+    typeof window !== "undefined" ? document.referrer : "";
+  const [referrer, setReferrer] = useState<string>(initialReferrer || "");
   const processIcons: Record<string, string> = {
     code: "/icons/vs.png",
     cursor: "/icons/cursor.png",
