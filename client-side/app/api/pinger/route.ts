@@ -15,7 +15,7 @@ export async function POST(req: NextRequest) {
     console.log("Unauthorized access");
     return NextResponse.json(
       { message: "Unauthorized access" },
-      { status: 401 },
+      { status: 401 }
     );
   }
 

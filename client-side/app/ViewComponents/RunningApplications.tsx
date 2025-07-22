@@ -22,8 +22,8 @@ const RunningApplications = () => {
       setReferrer(document.referrer || "");
     }
   }, []);
+
   useEffect(() => {
-    if (!referrer) return;
     fetchData();
     setReferrer(document.referrer);
     const interval = setInterval(fetchData, 2000);
