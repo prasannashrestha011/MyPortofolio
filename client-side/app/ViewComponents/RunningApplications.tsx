@@ -9,6 +9,7 @@ const RunningApplications = () => {
     code: "/icons/vs.png",
     brave: "/icons/brave.png",
     postman: "/icons/postman.png",
+    cursor: "/icons/cursor.png",
     "gnome-terminal": "/icons/svgs/neovim.svg",
   };
   const fetchData = async () => {
