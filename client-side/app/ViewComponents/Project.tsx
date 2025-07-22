@@ -39,7 +39,7 @@ const Project: React.FC<prop> = ({ itemVariants, containerVariants }) => {
             and generate a html,css,js code
           </motion.p>
           <motion.a
-            href="https://github.com/adarshp14/ai-portrait-frontend"
+            href="https://github.com/prasannashrestha011/Portcraft"
             className="text-gray-400 hover:text-white transition-colors inline-flex items-center gap-1 text-xs"
             variants={itemVariants}
             whileHover={{ scale: 1.05 }}
