@@ -18,6 +18,11 @@ const RunningApplications = () => {
     setProcesses(response.data.processes);
   };
   useEffect(() => {
+    if (typeof window !== "undefined") {
+      setReferrer(document.referrer || "");
+    }
+  }, []);
+  useEffect(() => {
     if (!referrer) return;
     fetchData();
     setReferrer(document.referrer);
