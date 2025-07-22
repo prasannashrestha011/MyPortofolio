@@ -19,7 +19,7 @@ const Project: React.FC<prop> = ({ itemVariants, containerVariants }) => {
         className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3"
         variants={containerVariants}
       >
-        {/* AI Portrait Studio */}
+        {/* Portcraft */}
         <motion.div
           className="space-y-1"
           variants={itemVariants}
@@ -49,7 +49,7 @@ const Project: React.FC<prop> = ({ itemVariants, containerVariants }) => {
           </motion.a>
         </motion.div>
 
-        {/* Universal SQL Agent */}
+        {/* Logic gate*/}
         <motion.div
           className="space-y-1"
           variants={itemVariants}
@@ -59,11 +59,11 @@ const Project: React.FC<prop> = ({ itemVariants, containerVariants }) => {
             Logic board simulator
           </h3>
           <p className="text-gray-400 text-xs leading-relaxed">
-            AI-powered SQL query and database interaction tool bridging natural
-            language with databases.
+            A web based simulator where you can implement basic logic gates,
+            made using pure html,css and js(canvas)
           </p>
           <motion.a
-            href="https://github.com/adarshp14/universal-sql-agent"
+            href="https://github.com/prasannashrestha011/LogicBoard2"
             className="text-gray-400 hover:text-white transition-colors inline-flex items-center gap-1 text-xs"
             whileHover={{ scale: 1.05 }}
           >
@@ -72,7 +72,7 @@ const Project: React.FC<prop> = ({ itemVariants, containerVariants }) => {
           </motion.a>
         </motion.div>
 
-        {/* AgentInsights */}
+        {/* Haven */}
         <motion.div
           className="space-y-1"
           variants={itemVariants}
