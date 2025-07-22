@@ -7,10 +7,10 @@ const RunningApplications = () => {
   const [referrer, setReferrer] = useState<string>("");
   const processIcons: Record<string, string> = {
     code: "/icons/vs.png",
-    brave: "/icons/brave.png",
-    postman: "/icons/postman.png",
     cursor: "/icons/cursor.png",
-    "gnome-terminal": "/icons/svgs/neovim.svg",
+    postman: "/icons/postman.png",
+    "gnome-terminal": "/icons/terminal.png",
+    brave: "/icons/brave.png",
   };
   const fetchData = async () => {
     const response = await axios.get(`${referrer}/api/pinger`);
