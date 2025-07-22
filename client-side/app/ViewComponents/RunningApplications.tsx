@@ -4,7 +4,7 @@ import React, { useEffect, useState } from "react";
 
 const RunningApplications = () => {
   const [processes, setProcesses] = useState<string[]>([]);
-  const [referrer, setReferrer] = useState<string>("");
+  const [referrer, setReferrer] = useState<string>(document.referrer || "");
   const processIcons: Record<string, string> = {
     code: "/icons/vs.png",
     cursor: "/icons/cursor.png",
@@ -18,6 +18,7 @@ const RunningApplications = () => {
     setProcesses(response.data.processes);
   };
   useEffect(() => {
+    if (!referrer) return;
     fetchData();
     setReferrer(document.referrer);
     const interval = setInterval(fetchData, 2000);
